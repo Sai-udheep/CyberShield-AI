@@ -1,0 +1,82 @@
+{
+    "Logistic Regression": {
+        "accuracy": 0.999,
+        "precision": 0.9985446077717945,
+        "recall": 0.9997085822526592,
+        "f1_score": 0.9991262560069899,
+        "train_time_sec": 0.10898900032043457,
+        "inference_latency_ms": 9.987751642862956e-05
+    },
+    "Random Forest": {
+        "accuracy": 0.99975,
+        "precision": 0.9997086247086248,
+        "recall": 0.9998542911263296,
+        "f1_score": 0.9997814526116413,
+        "train_time_sec": 1.4756927490234375,
+        "inference_latency_ms": 0.007052381833394368
+    },
+    "XGBoost": {
+        "accuracy": 0.99975,
+        "precision": 0.9998542698921598,
+        "recall": 0.9997085822526592,
+        "f1_score": 0.9997814207650273,
+        "train_time_sec": 0.4334084987640381,
+        "inference_latency_ms": 0.001097400983174642
+    },
+    "SVM": {
+        "accuracy": 0.9984166666666666,
+        "precision": 0.9973837209302325,
+        "recall": 0.9998542911263296,
+        "f1_score": 0.9986174779887943,
+        "train_time_sec": 29.134236097335815,
+        "inference_latency_ms": 0.12359788020451865
+    },
+    "MLP": {
+        "accuracy": 0.9994166666666666,
+        "precision": 0.9992717739586368,
+        "recall": 0.9997085822526592,
+        "f1_score": 0.9994901303809455,
+        "train_time_sec": 5.856879711151123,
+        "inference_latency_ms": 0.000780781110127767
+    },
+    "Logistic Regression (Full)": {
+        "accuracy": 0.99975,
+        "precision": 0.999563064375182,
+        "recall": 1.0,
+        "f1_score": 0.9997814844489766,
+        "train_time_sec": 0.09981155395507812,
+        "inference_latency_ms": 0.00012119611104329427
+    },
+    "Random Forest (Full)": {
+        "accuracy": 0.9999166666666667,
+        "precision": 0.9998543123543123,
+        "recall": 1.0,
+        "f1_score": 0.9999271508705471,
+        "train_time_sec": 1.1275203227996826,
+        "inference_latency_ms": 0.007275442282358806
+    },
+    "XGBoost (Full)": {
+        "accuracy": 0.9999166666666667,
+        "precision": 0.9998543123543123,
+        "recall": 1.0,
+        "f1_score": 0.9999271508705471,
+        "train_time_sec": 0.3564634323120117,
+        "inference_latency_ms": 0.0007181366284688314
+    },
+    "SVM (Full)": {
+        "accuracy": 0.9994166666666666,
+        "precision": 0.998981077147016,
+        "recall": 1.0,
+        "f1_score": 0.9994902788902643,
+        "train_time_sec": 24.305711030960083,
+        "inference_latency_ms": 0.13093600670496625
+    },
+    "MLP (Full)": {
+        "accuracy": 0.9994166666666666,
+        "precision": 0.999126383226558,
+        "recall": 0.9998542911263296,
+        "f1_score": 0.9994902046464205,
+        "train_time_sec": 3.966660499572754,
+        "inference_latency_ms": 0.0008167823155721029
+    }
+}

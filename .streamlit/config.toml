@@ -1,0 +1,19 @@
+[theme]
+base                   = "dark"
+backgroundColor        = "#0B1120"
+secondaryBackgroundColor = "#0F172A"
+textColor              = "#CBD5E1"
+primaryColor           = "#0EA5E9"
+font                   = "sans serif"
+
+[server]
+headless               = true
+runOnSave              = true
+fileWatcherType        = "poll"
+
+[browser]
+gatherUsageStats       = false
+
+[client]
+showErrorDetails       = true
+toolbarMode            = "developer"

@@ -1,0 +1,1656 @@
+================================================================================
+FILE: 1. Email Spam Detection Framework Using TF-IDF and Comparative ML.pdf
+================================================================================
+Total Pages: 7
+
+--- FIRST TWO PAGES ---
+Mrs.R. Mano Ranjani, 2026, 14:3 
+ISSN (Online): 2348-4098 
+ISSN (Print): 2395-4752 
+ 
+Page 1 
+International Journal of Science, 
+Engineering and Technology 
+An Open Access Journal 
+An Efficient Email Spam Detection Framework 
+Using TF-IDF Vectorization and Comparative 
+Machine Learning Classifiers 
+Gandu Eshwar, Chirra Ram Gopal Rao, Thandu Venkat Sai 
+Department of Computer Science and Engineering 
+Dhanalakshmi Srinivasan University 
+Tamil Nadu, India 
+I. INTRODUCTION 
+Email has become an indispensable medium for 
+personal, academic, and corporate 
+communication. According to recent industry 
+surveys, more than half of global email traffic still 
+consists of unsolicited messages despite decades 
+of countermeasures. Spam mail wastes network 
+resources, reduces user productivity, and is one of 
+the principal vectors used to deliver phishing 
+attacks and malicious payloads. 
+Early defenses against spam relied on manually 
+maintained blacklists, whitelists, an d keyword 
+filters. While simple to deploy, these approaches 
+degrade rapidly because spammers continuously 
+rotate domains, mutate textual content, and 
+adopt visual obfuscation techniques. As a result, 
+the research community has progressively moved 
+towards d ata-driven techniques in which 
+classifiers learn discriminative patterns directly 
+from labeled training corpora. 
+Machine learning (ML) has emerged as a 
+particularly attractive paradigm for spam filtering 
+because it is able to generalize over high -
+dimensional text features and to adapt to novel 
+spam variants without explicit rule engineering. 
+Probabilistic methods such as Naïve Bayes were 
+among the earliest adopted, followed by margin-
+based approaches such as Support Vector 
+Machines, and more recently by tre e-based 
+Abstract—Electronic mail is one of the most widely used forms of digital communication, yet it is increasingly 
+compromised by the proliferation of unsolicited bulk messages , commonly referred to as spam. Spam email not 
+only consumes bandwidth and storage but also exposes users to phishing, malware, and identity -theft risks. 
+Conventional rule -based and blacklist -driven approaches struggle to keep pace with the rapidly evolvin g 
+obfuscation strategies adopted by spammers. This paper presents an efficient and scalable email spam detection 
+framework that combines Term Frequency –Inverse Document Frequency (TF -IDF) vectorization with a battery of 
+supervised machine learning classifiers, including Support Vector Machine (SVM), Multinomial Naïve Bayes (MNB), 
+K-Nearest Neighbors (KNN), Random Forest (RF), Extra Trees Classifier (ETC), and gradient boosted ensembles. 
+Experiments performed on a publicly available labeled corpus of 5,572 m essages demonstrate that the proposed 
+TF-IDF + Linear SVM pipeline attains 99.9% accuracy on training data and 98.2% accuracy on unseen test data. 
+Ensemble strategies based on soft voting and stacking achieve precision values as high as 1.0, eliminating fa lse 
+positives in the evaluated test partition. The reported findings establish the proposed framework as a lightweight, 
+interpretable, and deployment-ready solution for real-world spam filtering systems. 
+ 
+Index Terms —Email spam, TF -IDF, Support Vector Machi ne, Naïve Bayes, machine learning, text classification, 
+ensemble learning. Mrs.R. Mano Ranjani, 2026, 14:3 
+ISSN (Online): 2348-4098 
+ISSN (Print): 2395-4752 
+ 
+Page 2 
+International Journal of Science, 
+Engineering and Technology 
+An Open Access Journal 
+ensemble methods such as Random Forest and 
+gradient-boosted classifiers. 
+This paper consolidates these directions into a 
+unified, reproducible pipeline. The principal 
+contributions of the work are as follows: 
+1. A complete TF -IDF based feature extract ion 
+pipeline tailored for email content. 
+2. A systematic comparative evaluation of 
+eleven supervised classifiers and two 
+ensemble strategies (voting and stacking). 
+3. A practical discussion of the trade -off 
+between false positives
+
+--- LAST TWO PAGES ---
+Mrs.R. Mano Ranjani, 2026, 14:3 
+ISSN (Online): 2348-4098 
+ISSN (Print): 2395-4752 
+ 
+Page 6 
+International Journal of Science, 
+Engineering and Technology 
+An Open Access Journal 
+scoring, OCR -based image analysis, and header 
+metadata inspection is therefore expected to 
+substantially improve robustness in adversarial 
+settings [1]. 
+Finally, the Linear SVM model, whose inference 
+cost is linear in the number of non -zero TF -IDF 
+features, scales naturally to high -throughput 
+environments processing millions of messages 
+per day. Heavier ensemble models such as 
+Stacking or Gradient Boosting deliver marginal 
+accuracy gains at the cost of higher inference 
+latency, making them more suitable for 
+asynchronous or batch-processing architectures. 
+VII. CONCLUSION AND FUTURE 
+WORK 
+This paper presented a comprehensive and 
+reproducible machine learning framework for 
+email spam detection. By coupling TF-IDF feature 
+extraction with a wide range of supervised 
+classifiers and two ensemble strategies, the 
+proposed pipeline achieved classification 
+accuracies above 98% on a standard benchmark 
+corpus. The Linear SVM model reached 99 .9% 
+accuracy on training data and 98.2% accuracy on 
+testing data, while ensemble strategies such as 
+soft voting attained perfect precision on the test 
+partition. 
+Beyond raw performance numbers, the study 
+highlighted the importance of selecting models 
+based on the operational cost of false positives 
+versus false negatives, rather than on accuracy 
+alone. Future work will pursue three directions. 
+First, multi -modal feature integration 
+incorporating header metadata, URL reputation, 
+and image-based content will be investigated to 
+strengthen the framework against evolving 
+evasion strategies. Second, deep learning 
+architectures based on bidirectional LSTM 
+networks and transformer encoders such as BERT 
+will be benchmarked against the TF-IDF baseline. 
+Third, the fram ework will be deployed and 
+evaluated in a realistic streaming environment to 
+assess latency, concept drift, and continuous 
+learning capabilities. 
+REFERENCES 
+[1]  V. Christina, S. Karpagavalli, and G. Suganya, 
+“A study on email spam filtering techniques,” 
+International Journal of Computer 
+Applications, vol. 12, no. 1, pp. 7 –10, Dec. 
+2010. 
+[2]  K. S. K. Chaitanya and D. S. R. Krishna, “Email 
+spam filtering using machine learning 
+techniques,” B.E. Project Report, Department 
+of Computer Science and Engine ering, 
+Sathyabama Institute of Science and 
+Technology, Chennai, India, Mar. 2022. 
+[3]  A. Khorsi, “An overview of content -based 
+spam filtering techniques,” Informatica, vol. 
+31, no. 3, pp. 269–277, Oct. 2007. 
+[4]  D. Mallampati and N. P. Hegde, “A machine 
+learning based email spam classification 
+framework model,” International Journal of 
+Innovative Technology and Exploring 
+Engineering (IJITEE), vol. 9, no. 4, pp. 1752 –
+1757, Feb. 2020. 
+[5]  I. H. Witten and E. Frank, Data Mining: 
+Practical Machine Learning T ools and 
+Techniques, 2nd ed. Amsterdam, The 
+Netherlands: Elsevier, 2005. 
+[6]  A. McDonald, SpamAssassin: A Practical Guide 
+to Integration and Configuration. 
+Birmingham, U.K.: Packt Publishing, 2004. 
+[7]  Apache Software Foundation, “Apache 
+SpamAssassin Public Corpus,” 2019. [Online]. 
+Available: 
+https://spamassassin.apache.org/old/public
+corpus/ 
+[8]  SpamAssassin, “Ham and Spam Dataset,” 
+Kaggle, 2018. [Online]. Available: Mrs.R. Mano Ranjani, 2026, 14:3 
+ISSN (Online): 2348-4098 
+ISSN (Print): 2395-4752 
+ 
+Page 7 
+International Journal of Science, 
+Engineering and Technology 
+An Open Access Journal 
+https://www.kaggle.com/veleon/ham-and-
+spam-dataset 
+[9]  T. Joachims, “Text categorization with support 
+vector machines: Learning with many 
+relevant features,” in Proc. ECML, 1998, pp. 
+137–142. 
+[10]  L. Breiman, “Random forests,” Machine 
+Learning, vol. 45, no. 1, pp. 5–32, Oct. 2001. 
+
+--- KEYWORD SEARCH ---
+Page 1 matches for 'accuracy':
+  - TF-IDF + Linear SVM pipeline attains 99.9% accuracy on training data and 98.2% accuracy on unseen test data.
+Page 1 matches for 'feature':
+  - dimensional text features and to adapt to novel
+Page 1 matches for 'classifier':
+  - Machine Learning Classifiers
+  - classifiers learn discriminative patterns directly
+  - supervised machine learning classifiers, including Support Vector Machine (SVM), Multinomial Naïve Bayes (MNB),
+Page 2 matches for 'dataset':
+  - filtering. Section III describes the dataset and
+  - III. DATASET AND PREPROCESSING
+  - A. Dataset Description
+Page 2 matches for 'accuracy':
+  - achieve competitive accuracy with very lo w
+  - achieved 99.9% accuracy on training data and
+  - 98.2% accuracy on testing data using the
+Page 2 matches for 'feature':
+  - 1. A complete TF -IDF based feature extract ion
+Page 2 matches for 'limitation':
+  - computational cost. Their primary limitation lies
+Page 2 matches for 'future work':
+  - directions for future work.
+Page 2 matches for 'results':
+  - experimental results. Section VI discusses the
+Page 2 matches for 'classifier':
+  - gradient-boosted classifiers.
+  - eleven supervised classifiers and two
+  - Naïve Bayes classifiers, popularised by tools such
+Page 2 matches for 'model':
+  - more complex models while remaining
+  - in their reduced ability to model inter -word
+  - been considered, but these models require
+Page 3 matches for 'dataset':
+  - duplication, the working dataset contained 5,572
+Page 3 matches for 'feature':
+  - single feature.
+  - C. TF-IDF Feature Extraction
+  - (TF-IDF) was adopted as the primary feature
+Page 3 matches for 'classifier':
+  - Extraction → Supervised Classifier → Binary
+  - B. Classifiers Evaluated
+  - supervised classifiers were trained on the same
+Page 3 matches for 'model':
+  - for model training.
+  - more trained machine learning models, and the
+Page 4 matches for 'dataset':
+  - The dataset was randomly partitioned into 80%
+Page 4 matches for 'accuracy':
+  - Model performance was assessed using accuracy,
+  - precision, and the confusion matrix. Accuracy
+  - Table II reports the test accuracy and precision of
+Page 4 matches for 'results':
+  - V. EXPERIMENTAL RESULTS
+  - B. Classifier-Level Results
+Page 4 matches for 'classifier':
+  - Classifier Abbrev. Key
+  - Classifier
+  - Classifier
+Page 4 matches for 'model':
+  - Model performance was assessed using accuracy,
+Page 5 matches for 'accuracy':
+  - Classifier Accuracy
+  - matrix achieved a training accuracy of 99.9% and
+  - a testing accuracy of 98.2%. The small
+Page 5 matches for 'feature':
+  - The Linear SVM trained on the TF -IDF feature
+  - despite the high dimensionality of the feature
+  - feature extraction proved consistently more
+Page 5 matches for 'results':
+  - D. Ensemble Results
+Page 5 matches for 'classifier':
+  - Classifier Accuracy
+  - Classifier (sigmoid)
+  - Bagging Classifier 96.12 89.19
+Page 5 matches for 'model':
+  - the model does not suffer from severe overfitting
+  - is slightly below the best -performing model,
+Page 6 matches for 'dataset':
+  - [8]  SpamAssassin, “Ham and Spam Dataset,”
+Page 6 matches for 'accuracy':
+  - accuracy gains at the cost of higher inference
+  - accuracy on training data and 98.2% accuracy on
+  - versus false negatives, rather than on accuracy
+Page 6 matches for 'feature':
+  - features, scales naturally to high -throughput
+  - email spam detection. By coupling TF-IDF feature
+  - First, multi -modal feature integration
+Page 6 matches for 'future work':
+  - alone. Future work will pursue three directions.
+Page 6 matches for 'classifier':
+  - classifiers and two ensemble strategies, the
+Page 6 matches for 'model':
+  - Finally, the Linear SVM model, whose inference
+  - per day. Heavier ensemble models such as
+  - corpus. The Linear SVM model reached 99 .9%
+Page 7 matches for 'dataset':
+  - spam-dataset
+Page 7 matches for 'feature':
+  - relevant features,” in Proc. ECML, 1998, pp.
+
+
+================================================================================
+FILE: 2. Detecting Suspicious Email Messages Using NLP.pdf
+================================================================================
+Total Pages: 13
+
+--- FIRST TWO PAGES ---
+ 
+Contents lists available at ScienceDirect
+Alexandria Engineering Journal
+journal homepage: www.elsevier.com/locate/aej  
+Original article
+Machine learning algorithm for detecting suspicious email messages using 
+Natural Language Processing 𝑁𝐿𝑃
+Ghadah Alkhodhairy a
+ , Kashif Saleem b
+ ,∗
+a Cybersecurity Master Program, College of Computer & Information Sciences (CCIS), King Saud University, Riyadh 12372, Saudi  Arabia
+b Center of Excellence in Information Assurance (CoEIA), King Saud University, Riyadh 12372, Saudi  Arabia
+A R T I C L E  I N F O
+Keywords:
+Phishing
+Machine learning
+Natural language processing
+SVM classification
+Cyber threat detection
+ A B S T R A C T
+Email-based cyber threats continue to evolve, presenting challenges to traditional security measures that 
+struggle to keep pace with sophisticated attack methods. This study introduces a machine learning-driven 
+framework that integrates Natural Language Processing (NLP) with a Support Vector Classifier (SVC) to 
+enhance email threat detection. The proposed model utilizes feature extraction techniques, including one-hot 
+encoding, TF-IDF vectorization, and BERT embeddings, to capture linguistic patterns indicative of malicious 
+emails. The model was trained and evaluated on a benchmark dataset, achieving an accuracy of 98.65%, 
+demonstrating superior performance over conventional spam detection systems. The results show a significant 
+reduction in false positives and false negatives, improving email security and reliability. This research 
+contributes to the field by presenting an optimized, scalable solution that can adapt to emerging cyber threats 
+and enhance automated email filtering mechanisms.
+1. Introduction
+Over the past two decades, the internet has become integral to 
+global connectivity, seamlessly integrating into daily life for nearly 3 
+billion users worldwide. Beyond enabling communication, it now drives 
+economic growth, contributing billions annually to the global econ-
+omy. However, this reliance on digital infrastructure has also escalated 
+the risks associated with cyber threats, particularly through email-
+based attacks [1]. The proliferation of sensitive data online underscores 
+the critical need for robust cybersecurity measures. Cybersecurity has 
+emerged as a paramount concern for individuals, corporations, and 
+institutions. The contemporary digital landscape has witnessed an un-
+precedented surge in the complexity of cyber threats that emanate 
+through email-based channels. The United States Department of Justice 
+defines cybercrime as any illegal activity done primarily through com-
+puters, including those that rely on digital records for their execution. 
+These threats encompass a variety of malicious techniques, from sub-
+tle phishing schemes to malware distribution, which pose formidable 
+challenges to both individuals and organizations [2].
+As our lives become increasingly linked with technology, cyber 
+threats have grown in magnitude and complexity, constituting a dan-
+gerous challenge for both individuals and organizations. Traditional 
+email security measures, although effective to some extent, have con-
+sistently struggled to keep pace with the rapid evolution of these 
+malevolent tactics. According to a CSIS survey conducted across eight 
+∗ Corresponding author.
+E-mail addresses: 443203981@student.ksu.edu.sa (G. Alkhodhairy), ksaleem@ksu.edu.sa (K. Saleem).
+countries, around 82% of employers are grappling with a severe short-
+age of cybersecurity expertise [3]. The repercussions of this talent 
+deficit are equally glaring, with 71% of these organizations confirming 
+tangible harm caused by this scarcity [3]. Furthermore, data from 
+CyberSeek, a National Initiative for Cybersecurity Education (NICE)-
+funded initiative, emphasized the gravity of the situation in the United 
+States. Job postings reveal that the number of unfilled cybersecurity 
+positions has increased by over 50% since 2015 [3]. The scenario inten-
+sifies on a gl
+
+--- LAST TWO PAGES ---
+ Alanazi, A hybrid NLP and domain validation technique for 
+disposable email detection, Alex. Eng. J. 102 (2024) 200–210.
+[8] K. Marzuki, N. Hanif, I.P. Hariyadi, Application of domain keys identified mail, 
+sender policy framework, anti-spam, and anti-virus: The analysis on mail servers, 
+Int. J. Electron. Commun. Syst. 2 (2) (2022) 65–73.
+[9] S.A. Khamis, C.F.M. Foozy, M.F.A. Aziz, N. Rahim, Header based email spam de-
+tection framework using support vector machine (SVM) technique, in: Advances 
+in Intelligent Systems and Computing, in: Advances in intelligent systems and 
+computing, Springer International Publishing, Cham, 2020, pp. 57–65.
+[10] D.K. Yadav, A. Raj, Rajlakshmi, N. Kumar, R. Kumari, Enhancing email security: 
+A real-time machine learning-based spam detection system, Internet Technol. 
+Lett. n/a (n/a) e618, http://dx.doi.org/10.1002/itl2.618, e618 ITL-24-0391.R2.
+[11] M.R.A. Saidat, S.Y. Yerima, K. Shaalan, Advancements of SMS spam de-
+tection: A comprehensive survey of NLP and ML techniques, Procedia 
+Comput. Sci. (ISSN: 1877-0509) 244 (2024) 248–259, http://dx.doi.org/10.
+1016/j.procs.2024.10.198, URL https://www.sciencedirect.com/science/article/
+pii/S1877050924029995, 6th International Conference on AI in Computational 
+Linguistics.
+[12] Y. Ding, N. Luktarhan, K. Li, W. Slamu, A keyword-based combination approach 
+for detecting phishing webpages, Comput. Secur. 84 (2019) 256–275.
+[13] D. Goel, A.K. Jain, Mobile phishing attacks and defence mechanisms: State of 
+art and open research challenges, Comput. Secur. 73 (2018) 519–544.
+[14] N.Q. Do, A. Selamat, O. Krejcar, E. Herrera-Viedma, H. Fujita, Deep learning for 
+phishing detection: Taxonomy, current challenges and future directions, IEEE 
+Access 10 (2022) 36429–36463.
+[15] R. Ahmad, I. Alsmadi, Machine learning approaches to IoT security: A systematic 
+literature review, Internet Things 14 (100365) (2021) 100365.
+[16] A. El Aassal, S. Baki, A. Das, R.M. Verma, An in-depth benchmarking and 
+evaluation of phishing detection research for security needs, IEEE Access 8 
+(2020) 22170–22192.
+[17] I. Qabajeh, F. Thabtah, F. Chiclana, A recent review of conventional vs. 
+automated cybersecurity anti-phishing techniques, Comput. Sci. Rev. 29 (2018) 
+44–55.
+[18] S. Salloum, T. Gaber, S. Vadera, K. Shaalan, A systematic literature review on 
+phishing email detection using natural language processing techniques, IEEE 
+Access 10 (2022) 65703–65727.
+[19] R. Amin, J. Ryan, J. van Dorp, Detecting targeted malicious email, IEEE Secur. 
+Priv. 10 (3) (2012) 64–71.
+[20] S.A.A. Ghaleb, M. Mohamad, W.A.H.M. Ghanem, A.B. Nasser, M. Ghetas, 
+A.M. Abdullahi, S.A.M. Saleh, H. Arshad, A.E. Omolara, O.I. Abiodun, Feature 
+selection by multiobjective optimization: Application to spam detection system by 
+neural networks and grasshopper optimization algorithm, IEEE Access 10 (2022) 
+98475–98489.
+[21] S. Magdy, Y. Abouelseoud, M. Mikhail, Efficient spam and phishing emails 
+filtering based on deep learning, Comput. Netw. 206 (108826) (2022) 108826.
+[22] M. Dewis, T. Viana, Phish responder: A hybrid machine learning approach to 
+detect phishing and spam emails, Appl. Syst. Innov. 5 (4) (2022) 73.
+[23] Y. Li, Algorithm comparison on email spam filtering task, Highlights Sci. Eng. 
+Technol. 34 (2023) 143–148.
+Alexandria Engineering Journal 128 (2025) 153–165 
+164 G. Alkhodhairy and K. Saleem
+[24] B. Biswas, Email spam classification dataset CSV, 2020.
+[25] R. Agarwal, A. Dhoot, S. Kant, V.S. Bisht, H. Malik, M.F. Ansari, A. Afthanorhan, 
+M.A. Hossaini, A novel approach for spam detection using natural language 
+processing with AMALS models, IEEE Access (2024).
+[26] N.W.S. Wardhani, M.Y. Rochayani, A. Iriany, A.D. Sulistyono, P. Lestantyo, Cross-
+validation metrics for evaluating classification performance on imbalanced data, 
+in: 2019 International Conference on Computer, Control, Informatics and Its 
+Applications (IC3INA), IEEE, 2019.
+Alexandria Engineering Journal 128 (2025) 153–165 
+165 
+
+--- KEYWORD SEARCH ---
+Page 1 matches for 'dataset':
+  - emails. The model was trained and evaluated on a benchmark dataset, achieving an accuracy of 98.65%,
+Page 1 matches for 'accuracy':
+  - emails. The model was trained and evaluated on a benchmark dataset, achieving an accuracy of 98.65%,
+Page 1 matches for 'feature':
+  - enhance email threat detection. The proposed model utilizes feature extraction techniques, including one-hot
+Page 1 matches for 'results':
+  - demonstrating superior performance over conventional spam detection systems. The results show a significant
+  - The failure to adapt to the threat results in a hard challenge: The
+Page 1 matches for 'classifier':
+  - framework that integrates Natural Language Processing (NLP) with a Support Vector Classifier (SVC) to
+Page 1 matches for 'model':
+  - enhance email threat detection. The proposed model utilizes feature extraction techniques, including one-hot
+  - emails. The model was trained and evaluated on a benchmark dataset, achieving an accuracy of 98.65%,
+Page 2 matches for 'dataset':
+  - learning — being trained on labeled datasets containing examples of
+  - model is tested with a separate dataset to evaluate its performance.
+Page 2 matches for 'accuracy':
+  - tection of malicious emails, presenting promising accuracy rates [9,
+  - improving classification accuracy and reducing misclassification rates.
+  - security of email communication channels by increasing the accuracy of
+Page 2 matches for 'feature':
+  - harder calling for feature selection techniques to enhance the perfor-
+  - based feature extraction with an optimized SVC model, significantly
+  - itating the process of feature extraction and refining the classification
+Page 2 matches for 'future work':
+  - study’s conclusion and future work are shown in Section 7.
+Page 2 matches for 'results':
+  - mentation is given in Section 5. Experimental results and comparative
+Page 2 matches for 'classifier':
+  - TME detection using a Random Forest classifier. To gauge the effective-
+  - features, through using a random forest classifier. This approach seeks
+Page 2 matches for 'model':
+  - models still suffer from high false positive rates, insufficient contex-
+  - based feature extraction with an optimized SVC model, significantly
+  - machine learning model learns to recognize patterns and features that
+Page 3 matches for 'dataset':
+  - datasets, namely the Anomaly Detection Challenges dataset and the
+  - Cybersecurity Data Mining dataset, both sourced from reputable online
+  - Data Pre-Processing to ensure the dataset’s integrity and relevance.
+Page 3 matches for 'accuracy':
+  - remarkable accuracy rates, with the CSDM2010 dataset achieving an
+  - accuracy rate of 88.80%, while the Anomaly Detection Challenges
+  - dataset demonstrated an accuracy rate of 87.20%. However, there were
+Page 3 matches for 'feature':
+  - was the identification of potentially valuable email header features
+  - Feature Selection played an important role in extracting the most
+  - evaluate the efficacy of the selected email header features in identifying
+Page 3 matches for 'limitation':
+  - certain limitations in the study such as focusing on theoretical aspects
+Page 4 matches for 'dataset':
+  - testing using several datasets, including SpamBase, SpamAssassin, and
+  - made on three benchmark datasets. The research team’s innovative
+  - Spambase dataset. Moreover, precision, recall, and F1 scores were also
+Page 4 matches for 'accuracy':
+  - accuracy. However, one of the persistent challenges in the realm of
+  - established practices in the literature, achieving remarkable accuracy
+  - hidden layers, resulted in an impressive maximum accuracy level on the
+Page 4 matches for 'feature':
+  - spam classifiers is the sheer abundance of features. Feature Selection
+  - plays a pivotal role in guiding feature selection algorithms to enhance
+  - feature extraction and the recently revised Evolutionary Group Opti-
+Page 4 matches for 'limitation':
+  - TF-IDF and one-hot encoding also involve a few limitations.
+Page 4 matches for 'results':
+  - UK-2011. The results demonstrate that the novel approach outperforms
+  - addressing threats. Results from the experiments revealed that Phish
+  - cluding ANN and partitional clustering. The results revealed that NB
+Page 4 matches for 'classifier':
+  - spam classifiers is the sheer abundance of features. Feature Selection
+  - allocation. The ANN classifier demonstrates good performance, going
+Page 4 matches for 'model':
+  - models, the proposed system aims to augment the effectiveness of
+  - Magdy et al. [21] used ANN based model for detecting malicious
+  - email content. The model offers a notable enhancement in performance
+Page 5 matches for 'dataset':
+  - Fig. 3. Sample from the dataset CSV file.
+  - datasets. It excels in finding the optimal hyperplane that maximizes the
+  - precision, recall, and F1-scores using the same preprocessed dataset.
+Page 5 matches for 'accuracy':
+  - Feature Extraction Method Accuracy (%) Precision (%) Recall (%) F1-Score (%)
+  - tion accuracy, mitigating computational costs through optimized SVC
+  - in binary classification, offering high accuracy even with imbalanced
+Page 5 matches for 'feature':
+  - Comparative performance of Feature Extraction Methods.
+  - Feature Extraction Method Accuracy (%) Precision (%) Recall (%) F1-Score (%)
+  - feature extraction. BERT is a state-of-the-art NLP model that gener-
+Page 5 matches for 'limitation':
+  - To address these limitations, we incorporated BERT (Bidirectional
+Page 5 matches for 'classifier':
+  - against other classifiers: Random Forests, Neural Networks, Decision
+Page 5 matches for 'model':
+  - feature extraction. BERT is a state-of-the-art NLP model that gener-
+  - The integration of BERT significantly enhanced model performance,
+  - tection. Tokenization and stop-word removal further improved model
+Page 6 matches for 'dataset':
+  - tions, such as involving k-1 folds of the dataset to develop a robust
+  - model and distinguish fine patterns in the dataset. The hyper-parameter
+  - performed on the entire dataset using the optimal hyper-parameters.
+Page 6 matches for 'accuracy':
+  - Model Accuracy (%) Precision (%) Recall (%) F1-Score (%)
+  - and accuracy in positive predictions. Fig.  4 illustrates the framework
+Page 6 matches for 'feature':
+  - features extracted from email messages for distinguishing patterns and
+Page 6 matches for 'classifier':
+  - Support Vector Classifier (SVC) 98.65 98.52 99.59 99.05
+  - an SVM classifier, specifically the classifier called SVC that uses the
+Page 6 matches for 'model':
+  - Performance comparison of Classification Models.
+  - Model Accuracy (%) Precision (%) Recall (%) F1-Score (%)
+  - other models, especially in recall and F1-score, which are critical for
+Page 7 matches for 'dataset':
+  - 2. Second split the dataset into training and validation for several
+  - Require: Email Dataset (labeled as spam and non-spam)
+  - 1. Load the email dataset
+Page 7 matches for 'accuracy':
+  - 3. Calculate performance metrics: Accuracy, Precision, Recall,
+Page 7 matches for 'feature':
+  - illustration in Fig.  5 explains how SVC works in a feature space.SVC
+  - ∙Input Layer (Input Vector): Represents the features extracted from
+  - the input data. Each feature corresponds to a dimension in the input
+Page 7 matches for 'classifier':
+  - 2. Initialize the Support Vector Classifier (SVC) with appropri-
+Page 7 matches for 'model':
+  - Fig. 6. General structure of SVC model.
+  - elaborative way of the working of the model.
+  - fold train the model using the training set, then evaluate using the
+Page 8 matches for 'accuracy':
+  - on key metrics, including accuracy, and confusion matrix. Accuracy:
+  - The accuracy Eq.  (1) measures the proportion of instances that are
+Page 8 matches for 'model':
+  - 3.4.3. Model deployment environment
+  - The evaluation of the model’s performance and efficiency is based
+  - set. It provides an overall indication of how well the models can classify
+Page 9 matches for 'dataset':
+  - The dataset used for training and testing the SVC model consisted
+  - 3.6. Dataset description and imbalance handling
+  - The Kaggle Email Spam Classification Dataset comprises 5172 emails
+Page 9 matches for 'accuracy':
+  - accuracy, precision, recall, and F1-score.
+  - decreased accuracy to 97.90% but improved precision for spam de-
+Page 9 matches for 'feature':
+  - and vocabulary richness. Feature variance analysis reveals that spam
+Page 9 matches for 'classifier':
+  - classifier assigns higher importance to the minority class during the
+Page 9 matches for 'model':
+  - ∙Joblib for model persistence (version 1.1.0).
+  - The dataset used for training and testing the SVC model consisted
+  - the dataset without duplicating data, enhancing model learning from
+Page 10 matches for 'dataset':
+  - Fig. 9. EDA of dataset content.
+  - dataset was split into training and testing sets, with a certain percentage
+  - The confusion matrix used in this study was based on a test dataset
+Page 10 matches for 'accuracy':
+  - ing the fit method. The model achieved a training accuracy of 98.89%.
+  - ∙Test accuracy: The accuracy of the model on the test set, represent-
+  - Our model achieved an accuracy of 98.65% on the test set, demon-
+Page 10 matches for 'feature':
+  - niques for preprocessing and feature extraction in our system was very
+  - as emphasized improved feature extraction and threat classification.
+Page 10 matches for 'results':
+  - 4. Results and discussion
+Page 10 matches for 'classifier':
+  - reveals that the SVC classifier correctly identified 731 phishing emails
+Page 10 matches for 'model':
+  - 3.7.3. Model loading and initializing
+  - the model building phase. The approach used was similar to that used
+  - SVC model in Scikit-learn were:
+Page 11 matches for 'dataset':
+  - challenges such as dataset bias and generalizability across different
+  - work to support multilingual datasets and optimizing feature selection
+  - • Dataset Scope and Real-World Applicability
+Page 11 matches for 'accuracy':
+  - Paper Model Used Accuracy
+  - While the proposed SVC model achieves the highest accuracy
+  - inference latency (3.2 ms/email) and accuracy, making it suitable for
+Page 11 matches for 'feature':
+  - suspicious email messages. By integrating SVC with advanced feature
+  - work to support multilingual datasets and optimizing feature selection
+Page 11 matches for 'limitation':
+  - Despite these limitations, our results aligned with previous studies
+  - 5.1. Limitations and future work
+  - detection, several limitations need to be acknowledged:
+Page 11 matches for 'future work':
+  - 5.1. Limitations and future work
+  - ally specific phishing lures. Future work will focus on multilingual
+  - To address these challenges, future work will focus on three key
+Page 11 matches for 'results':
+  - Despite these limitations, our results aligned with previous studies
+Page 11 matches for 'classifier':
+  - Amin et al. [19] Random Forest Classifier 91%
+  - other classifiers. As shown in Table  5, SVC requires longer training time
+  - classifier, we can shift the balance between sensitivity and specificity,
+Page 11 matches for 'model':
+  - Paper Model Used Accuracy
+  - While the proposed SVC model achieves the highest accuracy
+  - the importance of selecting a model based on deployment constraints:
+Page 12 matches for 'dataset':
+  - etary corporate datasets, while implementing fairness-aware algorithms
+Page 12 matches for 'accuracy':
+  - Classifier Training time (s) Inference latency (ms/email) Memory usage (MB) Accuracy (%)
+Page 12 matches for 'feature':
+  - A.M. Abdullahi, S.A.M. Saleh, H. Arshad, A.E. Omolara, O.I. Abiodun, Feature
+Page 12 matches for 'classifier':
+  - Comparison of computational metrics across Classifiers.
+  - Classifier Training time (s) Inference latency (ms/email) Memory usage (MB) Accuracy (%)
+Page 12 matches for 'model':
+  - • Cross-Lingual Model Training:
+  - Partnering with industry stakeholders to evaluate the model on propri-
+  - Developing transfer learning protocols to adapt the model dynami-
+Page 13 matches for 'dataset':
+  - [24] B. Biswas, Email spam classification dataset CSV, 2020.
+Page 13 matches for 'model':
+  - processing with AMALS models, IEEE Access (2024).
+
+
+================================================================================
+FILE: 3. PhiUSIIL Phishing URL Detection A Comprehensive Statistical Analysis.pdf
+================================================================================
+Total Pages: 48
+
+--- FIRST TWO PAGES ---
+PhiUSIILPhishingURLDetection: AComprehensiveStatistical
+Analysis
+By:PatrickMuthii
+Contact:patrickmuthii97@gmail.com
+Abstract
+Phishingattacksarenowprevalentacrossalmostallsectorsofthetechnologyworld.
+Everydevicethatconnectstotheinternetispronetoacyberthreatwhenfetchinginformation
+online.Cybercriminalsarealwaysexploringnefariouswaystostealprivateandpersonaldata1
+fromunsuspectinguserswhobrowsetheinternet.Thetechnologyboomhasmadeiteasierfor
+userstonotonlyconnectonlinebutalsoalloweduncontrolledandunregulatedfreedomof
+hostingwebsites.Asaresult,thereisanincreasedprevalenceofphishingattacksthattake
+advantageofunsuspectingusersandtherebycreateillegitimatewebsitesthatmimiclegitimate
+websiteswithagoalofstealingsensitivedata.
+ThisreportreliesonthePhiUSIILPhishingURLDataset,adatasetthatcontains134,850
+legitimateand100,945phishingURLswith46distinctfeatures,todevelopamachinelearning
+solutionfordetectingphishinglinks.Itcoverstheproceduralwaysinvolvedbeginningwithdata
+preprocessing,exploratorydataanalysis,andfeatureengineering,modeltrainingandevaluation.
+Todeterminetheoptimalalgorithmforthedevelopmentofthebestmachinelearningmodel,
+differentalgorithmsaretested.Statisticalanalyseshavealsobeenimplementedtorevealuseful
+patternsthatcandistinguishphishingurlsfromlegitimateones.
+Throughoutthereport,therearekeyareascoveredsuchasthemethodology, findings,
+recommendationsforthestakeholders,forinstancethedevelopers,organizationsandother
+industries.TheoverallaimistopracticallyshowtheroleofmachinelearninginfraudulentURL
+detection.
+GroupMembers
+TableofContents
+1. Introduction…………………………………………………………………………..4
+2. LiteratureReview……………………………………………………………………..5
+
+--- LAST TWO PAGES ---
+46
+print(f"{i}.{sorted_features[-i]}:{sorted_importance[-i]:.4f}")
+#DefineURL-basedandwebpagecontent-basedfeaturesurl_features=['URLLength','DomainLength','IsDomainIP','URLSimilarityIndex','CharContinuationRate','TLDLegitimateProb','URLCharProb','TLDLength','NoOfSubDomain','HasObfuscation','NoOfObfuscatedChar','ObfuscationRatio','NoOfLettersInURL','LetterRatioInURL','NoOfDegitsInURL','DegitRatioInURL','NoOfEqualsInURL','NoOfQMarkInURL','NoOfAmpersandInURL','NoOfOtherSpecialCharsInURL','SpacialCharRatioInURL','IsHTTPS']
+webpage_features=['LineOfCode','LargestLineLength','HasTitle','DomainTitleMatchScore','URLTitleMatchScore','HasFavicon','Robots','IsResponsive','NoOfURLRedirect','NoOfSelfRedirect','HasDescription','NoOfPopup','NoOfiFrame','HasExternalFormSubmit','HasSocialNet','HasSubmitButton','HasHiddenFields','HasPasswordField','Bank','Pay','Crypto','HasCopyrightInfo','NoOfImage','NoOfCSS','NoOfJS', 'NoOfSelfRef','NoOfEmptyRef','NoOfExternalRef']
+#Functiontotrainandevaluateamodeldeftrain_and_evaluate(X_train,X_test,y_train,y_test,feature_set_name):X_train_set=X_train[feature_set_name]X_test_set=X_test[feature_set_name]
+scaler=StandardScaler()X_train_scaled=scaler.fit_transform(X_train_set)X_test_scaled=scaler.transform(X_test_set)
+rf_classifier=RandomForestClassifier(n_estimators=100,random_state=42)rf_classifier.fit(X_train_scaled,y_train)47
+y_pred=rf_classifier.predict(X_test_scaled)accuracy=accuracy_score(y_test,y_pred)
+print(f"\nPerformanceusing{feature_set_name}features:")print(f"Accuracy:{accuracy:.4f}")print("\nClassificationReport:")print(classification_report(y_test,y_pred))
+#EvaluatemodelsusingURL-basedandwebpagecontent-basedfeaturestrain_and_evaluate(X_train,X_test,y_train,y_test,url_features)train_and_evaluate(X_train,X_test,y_train,y_test,webpage_features)
+#Evaluatemodelusingallfeaturesall_features=url_features+webpage_featurestrain_and_evaluate(X_train,X_test,y_train,y_test,all_features)
+
+--- KEYWORD SEARCH ---
+Page 2 matches for 'dataset':
+  - ThisreportreliesonthePhiUSIILPhishingURLDataset,adatasetthatcontains134,850
+Page 2 matches for 'feature':
+  - legitimateand100,945phishingURLswith46distinctfeatures,todevelopamachinelearning
+  - preprocessing,exploratorydataanalysis,andfeatureengineering,modeltrainingandevaluation.
+Page 2 matches for 'model':
+  - preprocessing,exploratorydataanalysis,andfeatureengineering,modeltrainingandevaluation.
+  - Todeterminetheoptimalalgorithmforthedevelopmentofthebestmachinelearningmodel,
+Page 3 matches for 'dataset':
+  - 3. DatasetOverview……………………………………………………………………..7
+Page 3 matches for 'feature':
+  - 4.2FeatureSelectionandEngineering………………………………………..12
+  - 4.4FeatureCorrelation…………………………………………………….….14
+Page 3 matches for 'limitation':
+  - 6.3LimitationsandChallenges…………………………………………..……...27
+Page 3 matches for 'results':
+  - 5.2ResultsfromEDA……………….…………………………………………..18
+Page 3 matches for 'model':
+  - 4.3EvaluatingMachineLearningModels…………………………………….13
+  - 4.5ComparisonofModels…………………………………….………….…...14
+  - 4.6ModelSelection……………………………………………………….….15
+Page 5 matches for 'dataset':
+  - detectandpreventphishingattacks.Thesetechniquesrelyondatasetscontainingfeatures
+  - leveragingthePhiUSIILPhishingURLDataset,whichconsistsof134,850legitimateURLsand
+Page 5 matches for 'feature':
+  - detectandpreventphishingattacks.Thesetechniquesrelyondatasetscontainingfeatures
+Page 6 matches for 'dataset':
+  - 100,945phishingURLswith46distinctfeatures.Thisdatasetcanbeusedtodevelopamachine
+Page 6 matches for 'feature':
+  - 100,945phishingURLswith46distinctfeatures.Thisdatasetcanbeusedtodevelopamachine
+  - preprocessing,exploratorydataanalysis,andfeatureengineering.Italsoevaluatesseveral
+Page 6 matches for 'model':
+  - modelstoidentifythemosteffectivemodelfordetectingphishingURLs.Statisticalanalysesare
+Page 7 matches for 'dataset':
+  - problemofoutdateddatasetswhichfailtodiscoverever-changingphishingtechniques,which
+  - theyshouldbecapturedimmediatelyinordertodeveloprobustdatasets.However, effortsto
+  - buildofflinephishingdatasetshavebeenlimited.Chiewetal.(2018)madeanattempttocreate
+Page 7 matches for 'feature':
+  - usersthatthesitesaresecure.Hence,thesetraditionaldetectionfeatures,suchasHTTPS
+  - relianceofearliermodelsonHTTPSwasadistinguishingfeature,butitcannolongerbetrusted.
+Page 7 matches for 'model':
+  - relianceofearliermodelsonHTTPSwasadistinguishingfeature,butitcannolongerbetrusted.
+  - Theeffectivenessofmachinelearningmodelsheavilydependsonthequalityand
+  - ultimatelyresultinpoorperformanceoftrainedmodels.PhishingURLsareshort-lived,hence
+Page 8 matches for 'dataset':
+  - challengesofoutdateddatasets,misleadingindicatorslikeSSL,anddatasetbiasesandeven
+  - robustdatasetsandadvancedtechniques.Thisstudybuildsonexistingresearchbyleveraginga
+  - robustdatasettodevelopamachinelearningsolutioncapableofdetectingphishingURLsin
+Page 8 matches for 'feature':
+  - featuresfromURLs,suchasdomainage,IPaddressusage,andURLlength,machinelearning
+  - demandsmoreadvancedfeatureextractionandmodelrefinement,forexample,specific
+  - statisticalanalysesandaccuratefeatureengineeringsoastoimprovethemodelperformance.
+Page 8 matches for 'model':
+  - modelscandifferentiatebetweenmaliciousandbenignlinks.Theyprovideanadvantageover
+  - demandsmoreadvancedfeatureextractionandmodelrefinement,forexample,specific
+  - statisticalanalysesandaccuratefeatureengineeringsoastoimprovethemodelperformance.
+Page 9 matches for 'dataset':
+  - containedinthedatasettohelpindetectingphishingURLsarealsodescribedbelow.
+Page 9 matches for 'feature':
+  - phishingURLsarefetchedfromPhishTank,OpenPhish,andMalwareWorld.Somefeatures
+  - Feature Description
+Page 10 matches for 'dataset':
+  - Table1.SomeFeaturesofthePhiUSIILphishingURLdataset
+Page 10 matches for 'feature':
+  - Table1.SomeFeaturesofthePhiUSIILphishingURLdataset
+  - Otherfeaturesincludetheuseofscreenshotsoflegitimatewebsitestoappearauthentic.A
+Page 11 matches for 'dataset':
+  - Thisdataset'sextensivenatureisusefulincapturingadiverseformofphishingurlsandhence
+  - Figure1.AsummarystatisticsofthePhiUSIILdataset
+  - Datapreprocessingisacriticalsteptoensurethedatasetusedfortrainingandevaluating
+Page 11 matches for 'model':
+  - effectivetotrainamachinelearningmodel.
+  - machinelearningmodelsisaccurate,reliable,andsuitablefortheintendedtask(Kotsiantisetal.,
+  - 2006).High-qualitypreprocessinghelpscreatetrustworthymodelsthatproduceeffective
+Page 12 matches for 'dataset':
+  - AddressingMissingValues:Thedatasetcontainsnomissingentries.DuplicateRecords:All
+  - recordsinthedatasetwereverifiedtobeunique.ZeroVarianceFeatures:Eachfeatureinthe
+  - datasetwasanalyzed,andnonewerefoundtohaveidenticaldatavaluesthroughout.Infinite
+Page 12 matches for 'feature':
+  - recordsinthedatasetwereverifiedtobeunique.ZeroVarianceFeatures:Eachfeatureinthe
+  - Figure2.Featurepercentagedistribution
+  - 4.2FeatureSelectionandEngineering
+Page 12 matches for 'model':
+  - suitablefortrainingmodelsandprovidesabenchmarkforfuturemodelimprovements.Adataset
+  - witherrorsorbiasescanleadtomodelsthatpropagatetheseissues.Keyvalidationstepsinclude:
+  - RunningBaselineModels:Testingthedatasetonavarietyofmachinelearning
+Page 13 matches for 'dataset':
+  - themostrelevantfeaturesinthedatasetforclassificationandprediction(Chenetal.,2020).
+  - Indatasetswithmultiplefeatures,evaluatingfeatureimportancehelpstounderstandthe
+  - attributesthatcontributemosttothetargetvariable'spredictionbecausefeaturesinadatasethold
+Page 13 matches for 'accuracy':
+  - accuracy. Thissectiondiscussestheevaluationofmachinelearningalgorithmsandthe
+  - Someadvantagesassociatedwithfeatureimportanceanalysisareimprovedaccuracyasthe
+Page 13 matches for 'feature':
+  - themostrelevantfeaturesinthedatasetforclassificationandprediction(Chenetal.,2020).
+  - Effectivefeatureselectionandengineeringenablethemodeltobetterunderstandpatternsand
+  - relationshipswithinthedata.Therefore,efficientfeatureselectionleadstoclassification
+Page 13 matches for 'results':
+  - modelcanfocusonthemostpredictiveindicators,leadingtobetterclassificationresults,
+Page 13 matches for 'model':
+  - Theperformanceofamachinelearningmodeldependsonitsabilitytoidentifyanduse
+  - Effectivefeatureselectionandengineeringenablethemodeltobetterunderstandpatternsand
+  - modelperformance(Hall,1999).Featureselectionavoidsthisbyfocusingonthemostimpactful
+Page 14 matches for 'dataset':
+  - datasetwithnumerousfeatureswhileprovidinginsightsintofeatureimportanceandcorrelation.
+  - Itiseffectivefordatasetswithmanyfeaturesbecauseitevaluatesfeatureimportancebasedon
+  - dataset.
+Page 14 matches for 'accuracy':
+  - thatcombinesmultipledecisiontreestoimproveclassificationaccuracyandreduceoverfitting.
+Page 14 matches for 'feature':
+  - datasetwithnumerousfeatureswhileprovidinginsightsintofeatureimportanceandcorrelation.
+  - Itiseffectivefordatasetswithmanyfeaturesbecauseitevaluatesfeatureimportancebasedon
+  - adetailedrankingoffeatureimportancewhichhelpedtoidentifykeyindicatorssuchas
+Page 14 matches for 'classifier':
+  - 4.3.1RandomForest Classifier:
+  - 4.3.2DecisionTreeClassifier:
+Page 14 matches for 'model':
+  - 4.3EvaluatingMachineLearningModels
+  - severalmachinelearningmodels,includingRandomForest,DecisionTree,andLogistic
+  - DecisionTreemodelsareinterpretableandversatileastheycanhandlebothnumerical
+Page 15 matches for 'dataset':
+  - thanRandomForestfordatasetswithcomplex,non-linearfeatureinteractions;butcanserveasa
+  - importantwhendealingwithdatasetswithmanyfeatures,asitreducesmulticollinearityand
+  - dataset'scomplexityandthenon-linear interactionsamongfeatures. Thecombinationof feature
+Page 15 matches for 'accuracy':
+  - comparedtotheDecisionTreemodel. LogisticRegressionfailedtoachievesimilar accuracyduetothe
+Page 15 matches for 'feature':
+  - LogisticRegressionisalinearmodelthatworkswellwithsmallerfeaturesetsandwhen
+  - therelationshipsbetweenfeaturesandthetargetvariablearemostlylinear. Itislesseffective
+  - thanRandomForestfordatasetswithcomplex,non-linearfeatureinteractions;butcanserveasa
+Page 15 matches for 'model':
+  - LogisticRegressionisalinearmodelthatworkswellwithsmallerfeaturesetsandwhen
+  - baselinemodelforcomparison.LogisticRegressioncanalsohelptounderstandtheimportance
+  - influencethemodel’sperformance.Stronglycorrelatedfeaturescanintroduceredundancy, which
+Page 16 matches for 'dataset':
+  - importanceanalysisandcorrelationstudiesallowedustorefinethedataset andselect themost
+  - theevaluationphase.Thechoicewasalsoinfluencedbyitsabilitytohandledatasetswith
+  - relationshipsandinteractionsbetweenfeaturesespeciallyinourdatasetthatcontains46
+Page 16 matches for 'accuracy':
+  - Inphishingdetection,thechoiceofanappropriatemodelcanguaranteeahighaccuracy
+  - robustperformanceacrosskeymetricssuchasAccuracy, Precision,Recall,andF1-Scoreduring
+  - averagedtoobtainreliableperformancemetrics,includingAccuracy, Precision,Recall,F1
+Page 16 matches for 'feature':
+  - informativefeatures
+  - multiplefeatureswell,withadependableensembleofdecisiontreesthataveragestheir
+  - relationshipsandinteractionsbetweenfeaturesespeciallyinourdatasetthatcontains46
+Page 16 matches for 'results':
+  - wasrepeatedfivetimes,witheachsubsetservingasavalidationsetonce.Theresultswere
+Page 16 matches for 'classifier':
+  - andreliability. TheRandomForestclassifieremergedasthemosteffectivemodelbasedonits
+Page 16 matches for 'model':
+  - 4.6Model Selection
+  - Inphishingdetection,thechoiceofanappropriatemodelcanguaranteeahighaccuracy
+  - andreliability. TheRandomForestclassifieremergedasthemosteffectivemodelbasedonits
+Page 17 matches for 'accuracy':
+  - hyperparametertuningandensureoverallaccuracyandgeneralizability.
+Page 17 matches for 'feature':
+  - AlthoughallthefeaturesarederivedfromtheURLorHTMLcode,itisimportantto
+  - individualfeatureshelpsselectanddiscardfeaturesinmachinelearning.Havingahighnumber
+  - offeaturescanincreasethecomplexityofthemodelandpotentiallymakeithardertointerpret.
+Page 17 matches for 'model':
+  - offeaturescanincreasethecomplexityofthemodelandpotentiallymakeithardertointerpret.
+  - significantlyaffectingmodelperformance.Featureimportancescorescanhelpidentifywhich
+  - featuresimpactthemodel’spredictionsmostandarerelevantformachinelearning.Wefollowed
+Page 18 matches for 'feature':
+  - Figure3.Acomparisonofthetop10featuresforRandomForest,DecisionTree,andLogisticRegressionmodels
+  - TheRandomForestmodelconsistentlyidentifiesfeaturesthatcontributethemostto
+  - classification.Fromthevisualization,theURLSimilarityIndexisthemostimportantfeature,
+Page 18 matches for 'model':
+  - Figure3.Acomparisonofthetop10featuresforRandomForest,DecisionTree,andLogisticRegressionmodels
+  - TheRandomForestmodelconsistentlyidentifiesfeaturesthatcontributethemostto
+Page 19 matches for 'feature':
+  - SimilartoRandomForest,theURLSimilarityIndexfeatureappearstobeastrong
+  - thefeatures,itsuggeststhattheDecisionTreereliesheavilyonthissingularfeaturetomake
+  - importantfeaturesbutreturnsotherinfluencessuchasLetterRatioInURLand
+Page 19 matches for 'results':
+  - 5.2ResultsfromEDA
+Page 19 matches for 'model':
+  - learningmodelduetoanover-relianceonspecificattributes,whichmaycausereduced
+  - TheLogisticRegressionmodelalsoranksURLSimilarityIndexandIsHTTPSasthemost
+  - RandomForestmodelprovidesaclearerandbroaderdistributionofimportantfeatures.
+Page 20 matches for 'feature':
+  - 5.2.1KeyNumericalFeatures
+  - Below, weconductananalysisofkeynumericalfeaturesusingboxplotsandthe
+  - observationsofthebehaviorofthesefeaturesURLLength,DomainLength,NoOfSubDomain,
+Page 21 matches for 'dataset':
+  - relationshipsidentifiedinthePhiUSIILdataset.
+Page 21 matches for 'feature':
+  - Figure5.KeyNumericalFeaturesvisualization
+  - Hence,numericalfeatures,especiallyURLlengthanddomaincomplexity, areimportant
+  - Thecorrelationmatrixprovidesanoverviewoftherelationshipsbetweenfeatureswhich
+Page 22 matches for 'feature':
+  - Figure6.FeatureCorrelationmatrixvisualization
+Page 23 matches for 'feature':
+  - Thestatisticalsignificance(p-values)foreachfeatureindicatesthatthesedifferencesare
+Page 24 matches for 'accuracy':
+  - evaluatedincludeAccuracy, Precision,Recall,F1-Score,andROCAUC.Additionally, it
+  - showthatallthreemodelsachievenear-perfectperformance,withAccuracy, Precision,Recall,
+Page 24 matches for 'results':
+  - performs5-foldcross-validationtoassessthemodels'generalizationcapabilities.Theresults
+  - perfectlydistinguishbetweenphishingandlegitimateURLs.Thecross-validationresultsreturn
+Page 24 matches for 'classifier':
+  - classifiers:RandomForest,DecisionTree,andLogisticRegression.Theperformancemetrics
+  - Characteristic(ROC)curvesvisuallydemonstratesabrilliantperformanceoftheclassifiers.All
+Page 24 matches for 'model':
+  - 5.2.4ModelPerformanceMetrics
+  - OurModelPerformanceComparisoncomparedtheperformanceofthreedifferent
+  - performs5-foldcross-validationtoassessthemodels'generalizationcapabilities.Theresults
+Page 25 matches for 'model':
+  - curve(AUC)being1.0foreachwhichmeansthemodelsarehighlyeffectiveinbalancingthe
+  - Figure8.ModelPerformanceComparison
+  - Forestmodel'sperformanceonthetestdata.Itincludesprecision,recall,F1-score,andsupport
+Page 26 matches for 'dataset':
+  - withthePhiUSIILdataset.
+Page 26 matches for 'accuracy':
+  - TheRandomForestmodelachievesahighaccuracy, precision,andrecallwhentrained
+Page 26 matches for 'model':
+  - hand,depictsthemodel'sperfectclassification.Alldatapointsarecorrectlyclassified,withthe
+  - TheRandomForestmodelachievesahighaccuracy, precision,andrecallwhentrained
+Page 27 matches for 'dataset':
+  - isbecausethedatasetishighlyseparableduetothepresenceofdominantfeaturesthat
+Page 27 matches for 'accuracy':
+  - Toevaluatetheperformanceofthemodels,wereliedonasetofmetricslikeAccuracy,
+  - Forestclassifierwasthebest-performingmodelacrossallevaluationmetrics.IthadanAccuracy,
+  - withperfectmetricsacrosstheboard.LogisticRegressionhadanAccuracyof99.99%and
+Page 27 matches for 'feature':
+  - isbecausethedatasetishighlyseparableduetothepresenceofdominantfeaturesthat
+  - differentiatephishingfromlegitimateURLs.Thesefeaturesaredomain-specificpatterns,
+Page 27 matches for 'classifier':
+  - Forestclassifierwasthebest-performingmodelacrossallevaluationmetrics.IthadanAccuracy,
+  - (ROCAUC)curveof1.0.TheDecisionTreeclassifieralsoachievedsimilarlyhighperformance,
+Page 27 matches for 'model':
+  - 6.1EvaluationMetricsandModel Performance
+  - Toevaluatetheperformanceofthemodels,wereliedonasetofmetricslikeAccuracy,
+  - metricstestedthemodel'sabilitytodifferentiatebetweenphishingandlegitimateURLsacross
+Page 28 matches for 'dataset':
+  - tailoredtothedataset.Thisoverfittingcanlimitthemodel'sgeneralizationtonew, unseendata,
+  - ofthechallengeswasensuringthemodel'sgeneralizability. AlthoughthePhiUSIILdataset
+  - reflectsreal-worldscenarios,thehighperformanceofthemodelsmightbedataset-specific.
+Page 28 matches for 'limitation':
+  - 6.3LimitationsandChallenges
+  - Despitethepromisingresults,severallimitationswereidentifiedduringtheproject.One
+  - Anotherlimitationwastheabsenceofexternaldatasetsforvalidation.Testingthemodelon
+Page 28 matches for 'results':
+  - Despitethepromisingresults,severallimitationswereidentifiedduringtheproject.One
+Page 28 matches for 'classifier':
+  - tree-basedclassifiers,suchasRandomForestandDecisionTree,raisedconcernsaboutpotential
+  - TheROCcurvesforallclassifiersalsoconfirmedtheirhighperformance.TheperfectRandom
+Page 28 matches for 'model':
+  - themodelsreturnedrobustdetectioncapabilities,theexceptionallyhighperformanceof
+  - overfitting.Perfectperformancemetrics,mightsometimesmeanthatthemodelsareoverly
+  - tailoredtothedataset.Thisoverfittingcanlimitthemodel'sgeneralizationtonew, unseendata,
+Page 29 matches for 'dataset':
+  - shouldbeprogressiveupdatestothetrainingdatasetandincorporatingnewphishingURLsto
+Page 29 matches for 'model':
+  - regularizationtechniques,couldenhancethemodel'sabilitytogeneralizetounseendata.There
+  - helpmaintainthemodel'seffectivenessovertime.Other stakeholderssuchasdevelopers, should
+  - enhanceend-user protection. Theycanset thetrainedmodelsasbrowser extensionswherethesetoolscan
+Page 30 matches for 'dataset':
+  - ThisresearchintroducesPhiUSIIL,arobustdatasetthatcontains134,850legitimateand
+  - diversedatasetensuresimprovedmodelgeneralizationanddetectionaccuracy. Inthestatistical
+  - ForestandDecisionTree.Thiscallsforfurthertestingonexternaldatasets.Infuture,expanding
+Page 30 matches for 'accuracy':
+  - diversedatasetensuresimprovedmodelgeneralizationanddetectionaccuracy. Inthestatistical
+  - analysis,werevealedhighaccuracyandperformanceoftree-basedalgorithmssuchasRandom
+Page 30 matches for 'feature':
+  - thefeaturesbeyondtheurlscouldhelpcapturedeeperpatternsandimprovethedetection
+Page 30 matches for 'model':
+  - machinelearningresearchersanddeveloperswithaccesstoup-to-datedataformodeltraining
+  - diversedatasetensuresimprovedmodelgeneralizationanddetectionaccuracy. Inthestatistical
+  - capabilitiesofthemodelinreturn.Futureresearchshouldfocusonautomatedframeworksthat
+Page 31 matches for 'feature':
+  - andprotectionschemeusingintegratedfeaturesofimages,framesandtext.
+  - Chen,R.C.,Dewi,C.,Huang,S.W.,&Caraka,R.E.(2020).Selectingcriticalfeaturesfordata
+Page 32 matches for 'dataset':
+  - Mohammad,R.M.,Thabtah,F.,&McCluskey, L.(2015a).Phishingwebsitedataset:UCI
+Page 32 matches for 'feature':
+  - Hall,M.A.(1999).Correlation-basedfeatureselectionformachinelearning(PhDdissertation).
+  - featuresforphishingwebpagedetection.FutureGenerationComputerSystems,
+  - Saarela,M.,&Jauhiainen,S.(2021).Comparisonoffeatureimportancemeasuresas
+Page 32 matches for 'model':
+  - Li,Y.,Yang,Z.,Chen,X.,Yuan,H.,&Liu,W. (2019).AstackingmodelusingURLandHTML
+  - explanationsforclassificationmodels.SNAppliedSciences,3(2),272.
+Page 33 matches for 'feature':
+  - featurecategoryinmachinelearning-basedphishingwebsitedetection.
+  - Toloşi,L.,&Lengauer, T. (2011).Classificationwithcorrelatedfeatures:Unreliabilityoffeature
+Page 34 matches for 'dataset':
+  - #-*-coding:utf-8-*-"""ProjectProposalandDataSetNew1.ipynb
+  - df=pd.read_csv("/Users/Desktop/PhiUSIIL_Phishing_URL_Dataset.csv")
+Page 34 matches for 'accuracy':
+  - importpandasaspdimportmatplotlib.pyplotaspltimportseabornassnsimportnumpyasnpfromsklearn.model_selectionimporttrain_test...
+Page 34 matches for 'feature':
+  - importpandasaspdimportmatplotlib.pyplotaspltimportseabornassnsimportnumpyasnpfromsklearn.model_selectionimporttrain_test...
+Page 34 matches for 'classifier':
+  - importpandasaspdimportmatplotlib.pyplotaspltimportseabornassnsimportnumpyasnpfromsklearn.model_selectionimporttrain_test...
+Page 34 matches for 'model':
+  - importpandasaspdimportmatplotlib.pyplotaspltimportseabornassnsimportnumpyasnpfromsklearn.model_selectionimporttrain_test...
+Page 35 matches for 'dataset':
+  - print("A.Basicstatisticalsummaries")print("\nDatasetshape:",df.shape)print("\nColumntypes:")print(df.dtypes)print("\nSum...
+  - defanalyze_class_distribution(df):"""AnalyzeandvisualizethedistributionoflegitimatevsphishingURLs"""plt.figure(figsize=(...
+Page 35 matches for 'feature':
+  - """##2.NumericalFeaturesAnalysis"""
+  - defanalyze_numerical_features(df):
+Page 36 matches for 'feature':
+  - """Analyzekeynumericalfeatureswithboxplotsandstatisticaltests"""key_features=['URLLength','DomainLength','NoOfSubDomain'...
+  - #Createboxplotsforeachfeaturefig,axes=plt.subplots(2,3,figsize=(20,12))axes=axes.ravel()
+  - foridx,featureinenumerate(key_features):sns.boxplot(x='label',y=feature,data=df,ax=axes[idx])axes[idx].set_xlabel('URLTy...
+Page 37 matches for 'feature':
+  - corr_matrix=df[important_features].corr()
+  - plt.figure(figsize=(12,10))mask=np.triu(np.ones_like(corr_matrix,dtype=bool))sns.heatmap(corr_matrix,mask=mask,cmap='coo...
+  - #Printstrongcorrelationsprint("\nStrongcorrelations(|r|>0.5):")foriinrange(len(important_features)):forjinrange(i+1,len(...
+Page 38 matches for 'feature':
+  - df.groupby('label')[feature].value_counts(normalize=True).unstack()*100
+  - #Createbarplotfeature_dist.plot(kind='bar',ax=axes[idx])axes[idx].set_title(f'{feature}UsagebyURLType')axes[idx].set_xla...
+  - #Addchi-squaretestcontingency=pd.crosstab(df['label'],df[feature])chi2,p_value=stats.chi2_contingency(contingency)[:2]ax...
+Page 39 matches for 'feature':
+  - #Getfeaturescoresfeature_scores=pd.DataFrame({'Feature':X.columns,'Score':selector.scores_}).sort_values('Score',ascendi...
+  - #Plotfeatureimportanceplt.figure(figsize=(12,6))sns.barplot(x='Score',y='Feature',data=feature_scores.head(10))plt.title...
+  - returnfeature_scores
+Page 39 matches for 'classifier':
+  - defcompare_feature_importance(X,y):"""Comparefeatureimportanceacrossdifferentalgorithms"""#Initializeclassifiers
+Page 40 matches for 'feature':
+  - #Storefeatureimportancesfeature_importances={}
+  - #Getfeatureimportancesbasedonalgorithmtypeifname=='RandomForest':importances=actual_clf.feature_importances_elifname=='D...
+  - #CreateaDataFrameoffeatureimportancesfeature_imp_df=pd.DataFrame({'feature':X.columns,
+Page 40 matches for 'classifier':
+  - classifiers={'RandomForest':RandomForestClassifier(n_estimators=100,random_state=42),'DecisionTree':DecisionTreeClassifi...
+  - #Iteratethroughclassifiersforidx,(name,clf)inenumerate(classifiers.items(),1):#Preparepipelinewithscalingpipeline=Pipeli...
+  - #Extractclassifieractual_clf=pipeline.named_steps['classifier']
+Page 41 matches for 'feature':
+  - #Storeindictionaryfeature_importances[name]=feature_imp_df
+  - #Subplotforeachclassifierplt.subplot(2,2,idx)sns.barplot(x='importance',y='feature',data=feature_imp_df.head(10),palette...
+  - returnfeature_importances
+Page 41 matches for 'classifier':
+  - #Subplotforeachclassifierplt.subplot(2,2,idx)sns.barplot(x='importance',y='feature',data=feature_imp_df.head(10),palette...
+  - defcompare_model_performance(X,y):"""Compareperformanceofdifferentclassifiers"""#SplitthedataX_train,X_test,y_train,y_te...
+  - #Initializeclassifiersclassifiers={'RandomForest':RandomForestClassifier(n_estimators=100,random_state=42),'DecisionTree...
+Page 41 matches for 'model':
+  - """##7.ModelPerformanceComparison"""
+  - defcompare_model_performance(X,y):"""Compareperformanceofdifferentclassifiers"""#SplitthedataX_train,X_test,y_train,y_te...
+Page 42 matches for 'accuracy':
+  - #Calculateperformancemetricsmetrics={'Accuracy':accuracy_score(y_test,y_pred),'Precision':precision_score(y_test,y_pred)...
+Page 42 matches for 'classifier':
+  - #Iteratethroughclassifiersforname,clfinclassifiers.items():#Preparepipelinewithscalingpipeline=Pipeline([('scaler',Stand...
+Page 43 matches for 'classifier':
+  - #ROCcurvedetailsplt.plot([0,1],[0,1],linestyle='--',label='RandomClassifier')plt.title('ReceiverOperatingCharacteristic(...
+Page 43 matches for 'model':
+  - #Printperformancemetricsprint("ModelPerformanceMetrics:")forname,metricsinperformance_metrics.items():print(f"\n{name}Pe...
+  - #Runmodelperformancecomparisonperformance_metrics=compare_model_performance(X,y)
+Page 44 matches for 'feature':
+  - #CalculatesummarystatisticsforkeynumericalfeaturesbyURLtypekey_features=['URLLength','DomainLength','NoOfSubDomain','NoO...
+  - print("SummaryStatisticsforLegitimateURLs(label=1):")print(df[df['label'] ==1][key_features].describe())print("\nSummary...
+Page 44 matches for 'classifier':
+  - #Preparepipelinepipeline=Pipeline([('scaler',StandardScaler()),('classifier',RandomForestClassifier(n_estimators=100,ran...
+Page 45 matches for 'feature':
+  - print(df[df['label'] ==0][key_features].describe())
+  - print("\nMeanvaluesofkeyfeaturesforphishingandlegitimateURLs:")key_features=['URLLength','DomainLength','NoOfSubDomain',...
+  - #SeparatefeaturesandtargetX=df.drop(['label','FILENAME','URL','Domain','TLD','Title'],axis=1)y=df['label']
+Page 46 matches for 'feature':
+  - #Standardizethefeaturesscaler=StandardScaler()X_train_scaled=scaler.fit_transform(X_train)X_test_scaled=scaler.transform...
+  - print("Question1:WhichfeaturesarethemostsignificantindicatorsofaphishingURL?")
+  - #Getfeatureimportancesfeature_importance= rf_classifier.feature_importances_feature_names=X.columns
+Page 46 matches for 'classifier':
+  - #TrainaRandomForestclassifierrf_classifier=RandomForestClassifier(n_estimators=100,random_state=42)rf_classifier.fit(X_t...
+  - #Getfeatureimportancesfeature_importance= rf_classifier.feature_importances_feature_names=X.columns
+Page 47 matches for 'feature':
+  - print(f"{i}.{sorted_features[-i]}:{sorted_importance[-i]:.4f}")
+  - #DefineURL-basedandwebpagecontent-basedfeaturesurl_features=['URLLength','DomainLength','IsDomainIP','URLSimilarityIndex...
+  - webpage_features=['LineOfCode','LargestLineLength','HasTitle','DomainTitleMatchScore','URLTitleMatchScore','HasFavicon',...
+Page 47 matches for 'classifier':
+  - rf_classifier=RandomForestClassifier(n_estimators=100,random_state=42)rf_classifier.fit(X_train_scaled,y_train)
+Page 47 matches for 'model':
+  - #Functiontotrainandevaluateamodeldeftrain_and_evaluate(X_train,X_test,y_train,y_test,feature_set_name):X_train_set=X_tra...
+Page 48 matches for 'accuracy':
+  - y_pred=rf_classifier.predict(X_test_scaled)accuracy=accuracy_score(y_test,y_pred)
+  - print(f"\nPerformanceusing{feature_set_name}features:")print(f"Accuracy:{accuracy:.4f}")print("\nClassificationReport:")...
+Page 48 matches for 'feature':
+  - print(f"\nPerformanceusing{feature_set_name}features:")print(f"Accuracy:{accuracy:.4f}")print("\nClassificationReport:")...
+  - #EvaluatemodelsusingURL-basedandwebpagecontent-basedfeaturestrain_and_evaluate(X_train,X_test,y_train,y_test,url_feature...
+  - #Evaluatemodelusingallfeaturesall_features=url_features+webpage_featurestrain_and_evaluate(X_train,X_test,y_train,y_test...
+Page 48 matches for 'classifier':
+  - y_pred=rf_classifier.predict(X_test_scaled)accuracy=accuracy_score(y_test,y_pred)
+Page 48 matches for 'model':
+  - #EvaluatemodelsusingURL-basedandwebpagecontent-basedfeaturestrain_and_evaluate(X_train,X_test,y_train,y_test,url_feature...
+  - #Evaluatemodelusingallfeaturesall_features=url_features+webpage_featurestrain_and_evaluate(X_train,X_test,y_train,y_test...
+
+
+================================================================================
+FILE: 4. AI-Driven Phishing Website Detection Using Machine Learning.pdf
+================================================================================
+Total Pages: 10
+
+--- FIRST TWO PAGES ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+898 
+AI-Driven Phishing Website Detection Using 
+Machine Learning 
+Author: Kajal Nitin Bauskar 
+Affiliation: Godavari Institute of Management & Research, Jalgaon. 
+Guide: Prof. Leena Patil 
+ 
+ABSTRACT  
+Phishing attacks remain one of the most persistent and rapidly evolving threats in cybersecurity. As 
+attackers continuously develop new techniques to deceive users, traditional detection methods such as 
+blacklists and rule -based filters are no longer suffi cient. This research paper proposes an AI -driven 
+phishing website detection system powered by advanced machine learning algorithms. The study utilizes 
+lexical, host -based, and securityrelated URL features to classify websites as phishing or legitimate. 
+Experimental analysis demonstrates that models such as LightGBM, XGBoost, and Random Forest 
+significantly improve identification accuracy. The findings indicate that AI -based URL analysis can 
+strengthen modern cybersecurity infrastructures.  
+KEYWORDS : Phishing Detection, Machine Learning, Cybersecurity, URL Analys is, LightGBM, AI -
+Based Security. 
+1. INTRODUCTION  
+With the exponential growth of internet usage, online activities such as banking, ecommerce, and social 
+networking have become extremely common. However, this digital expansion has also led to an alarming 
+rise in cybercrimes—particularly phishing attacks. Phishing websites mimic legitimate platforms to steal 
+confidential information such as passwords, credit card details, and personal identities. The glo bal 
+cybersecurity landscape has reported millions of phishing incidents annually, many of which bypass 
+conventional security systems. Attackers often modify URL structures, embed hidden redirections, and 
+use domain spoofing to avoid detection. Traditional systems like blacklists cannot keep up with these 
+dynamic threats. Machine learning (ML) provides a powerful alternative by analyzing URL behavior 
+patterns and automatically classifying harmful links. AI enables faster detection, higher accuracy, and 
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+899 
+resilience against newly emerging phishing techniques. This research paper presents an enhanced ML -
+based phishing detection model that integrates multiple feature engineering layers and state -of-the-art 
+algorithms to improve accuracy and speed.  
+2.OBJECTIVE 
+a) To develop a machine learning model for accurate phishing website detection using Random Forest 
+b) To extract and analyze relevant features from URLs for classification 
+c) To implement a user-friendly web interface for real-time phishing detection 
+d) To evaluate model performance using standard metrics including accuracy, precision, recall, and F1-score 
+e) To ensure model interpretability through feature importance analysis 
+ 
+3.LITERATURE REVIEW  
+Several studies highlight the importance of lexical and domain-based features for phishing URL detection. 
+Early approaches depended on signature -based filtering, which quickly became ineffective as attackers 
+generated new URLs at scale. Later studies introduced machine learning models that used URL length, IP 
+presence, domain age, and token patterns to distinguish malicious websites. Recent research shows that 
+gradient boosting algorithms—especially XGBoost and LightGBM— deliver high performance due to their 
+tree-based structure and ability to handle complex feature interactions. Deep learning models such as CNN 
+and RNN have also been explored, but their computational cost makes them less suitable for real -time 
+deployment. A gap identified in previous research is the need for hybrid feature integration. Many models 
+focus solely on lexical or host-based attributes. This study bridges that gap by combining multiple feature 
+typ
+
+--- LAST TWO PAGES ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+906 
+ Multi-language Support: Expand detection capabilities to non-English phishing sites 
+ API Integration: Provide detection services to other applications via API 
+ Model Retraining Pipeline: Implement automatic retraining with new data 
+ 
+ 
+7. FINDINGS 
+1. Machine learning models demonstrated high accuracy in distinguishing phishing websites from legitimate 
+ones using extracted URL, domain, and content-based features.  
+2. URL structural features—such as abnormal length, use of special characters, and        deceptive patterns—
+were found to be the most influential indicators of phishing activity.  
+3. Ensemble learning techniques (Random Forest, XGBoost) achieved the best overall performance, 
+providing strong generalization and low false-positive rates compared to individual classifiers.  
+4. Data preprocessing and balancing using methods like SMOTE significantly improved model stability and 
+reduced bias toward legitimate websites.  
+5. Feature selection techniques enhanced model efficiency by reducing noise and retaining the  most 
+discriminative attributes.  
+ 
+8. CONCLUSION  
+This research project successfully developed an AI-driven phishing detection system using Random Forest 
+algorithm. The implementation demonstrated that Random Forest provides excellent performance in 
+classifying URLs as legitimate or phishing, with accuracy rates exceeding 90%. The system's web -based 
+interface provides accessible real-time protection against phishing threats. 
+The project highlights the effectiveness of machine learning in cybersecurity  applications and provides a 
+foundation for further development of intelligent phishing detection systems. By leveraging URL 
+characteristics rather than relying solely on blacklists, the approach offers proactive protection against 
+emerging phishing threats. 
+The Random Forest algorithm was particularly suitable for this application due to its robustness, good 
+performance with default parameters, and excellent feature interpretability. The implementation 
+demonstrates that feature -based machine learning appro aches can significantly enhance cybersecurity 
+measures while maintaining usability and accessibility for end-users. 
+This research contributes to the growing body of work applying artificial intelligence to cybersecurity 
+challenges and provides a practical implementation that balances accuracy, interpretability, and 
+computational efficiency.  
+ 
+ © 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+907 
+  
+9.REFERENCES  
+1. Blum et al., “Phishing URL Detection Techniques,” 2020  
+2. Ma et al., “Machine Learning for Malicious URL Identification,” 2019  
+3. Sahoo et al., “Survey of Online Phishing Detection,” 2021  
+4. Karim et al., “Hybrid ML URL Classification,” 2023  
+  
+
+--- KEYWORD SEARCH ---
+Page 1 matches for 'accuracy':
+  - significantly improve identification accuracy. The findings indicate that AI -based URL analysis can
+  - patterns and automatically classifying harmful links. AI enables faster detection, higher accuracy, and
+Page 1 matches for 'feature':
+  - lexical, host -based, and securityrelated URL features to classify websites as phishing or legitimate.
+Page 1 matches for 'model':
+  - Experimental analysis demonstrates that models such as LightGBM, XGBoost, and Random Forest
+Page 2 matches for 'dataset':
+  - methodology. First, a labeled dataset consisting of phishing and legitimate URLs is collected from publicly
+  - available sources such as PhishTank, OpenPhish, and trusted domain lists. The dataset is then preprocessed
+Page 2 matches for 'accuracy':
+  - algorithms to improve accuracy and speed.
+  - d) To evaluate model performance using standard metrics including accuracy, precision, recall, and F1-score
+Page 2 matches for 'feature':
+  - based phishing detection model that integrates multiple feature engineering layers and state -of-the-art
+  - b) To extract and analyze relevant features from URLs for classification
+  - e) To ensure model interpretability through feature importance analysis
+Page 2 matches for 'model':
+  - based phishing detection model that integrates multiple feature engineering layers and state -of-the-art
+  - a) To develop a machine learning model for accurate phishing website detection using Random Forest
+  - d) To evaluate model performance using standard metrics including accuracy, precision, recall, and F1-score
+Page 3 matches for 'dataset':
+  - Regression, and Gradient Boosting are then trained on the processed dataset using an appropriate train –test
+  - 4.1 Dataset
+  - A dataset of 11,500 URLs was used for training and evaluation. It contains an equal distribution of
+Page 3 matches for 'accuracy':
+  - models are theoretically evaluated using standard classification metrics including accuracy, precision, recall,
+Page 3 matches for 'feature':
+  - age, DNS records, SSL certificate validity), and conten tbased features (scripts, redirections, embedded
+  - links). Feature selection methods are used to retain the most discriminative attributes.
+  - 4.2 Feature Engineering Three major feature categories were used:
+Page 3 matches for 'model':
+  - Machine learning models such as Decision Tree, Random Forest, Support Vector Machine, Logistic
+  - models are theoretically evaluated using standard classification metrics including accuracy, precision, recall,
+  - Finally, the best-performing model is selected based on its ability to accurately distinguish phishing websites
+Page 4 matches for 'feature':
+  - 2. Feature extraction module processes URL
+Page 4 matches for 'classifier':
+  - The following ML classifiers were trained:
+Page 4 matches for 'model':
+  - 4.3 Applied Machine Learning Models
+  - 3. ML model predicts label
+Page 5 matches for 'accuracy':
+  - The models were evaluated using accuracy, precision, recall, and F1-score. LightGBM achieved the highest
+  - accuracy of 99.81%, outperforming XGBoost (99.74%) and Random Forest (98.62%). LightGBM’s leaf-
+  - • Accuracy: Proportion of correctly classified instances
+Page 5 matches for 'feature':
+  - wise tree growth and efficient handling of large feature sets allows it to process URLs quickly and correctly
+Page 5 matches for 'results':
+  - 5. RESULTS AND DISCUSSION
+Page 5 matches for 'model':
+  - The models were evaluated using accuracy, precision, recall, and F1-score. LightGBM achieved the highest
+  - identify hidden malicious patterns. The model demonstrated strong resilience against:
+  - The model was evaluated using standard classification metrics:
+Page 6 matches for 'accuracy':
+  - Accuracy (%)  92-95%  Overall classification
+Page 6 matches for 'feature':
+  - • Feature importance charts showing the most discriminative features
+Page 6 matches for 'results':
+  - 2.Experimental Results
+  - 3.Graphical Results
+Page 8 matches for 'accuracy':
+  - While the current system achieves high accuracy, several enhancements could improve its capabilities:
+Page 8 matches for 'feature':
+  -  Real-time Content Analysis: Incorporate page content analysis alongside URL features
+  -  Enhanced Feature Set: Incorporate additional features like website popularity metrics
+Page 9 matches for 'accuracy':
+  - 1. Machine learning models demonstrated high accuracy in distinguishing phishing websites from legitimate
+  - classifying URLs as legitimate or phishing, with accuracy rates exceeding 90%. The system's web -based
+  - challenges and provides a practical implementation that balances accuracy, interpretability, and
+Page 9 matches for 'feature':
+  - ones using extracted URL, domain, and content-based features.
+  - 2. URL structural features—such as abnormal length, use of special characters, and        deceptive patterns—
+  - 5. Feature selection techniques enhanced model efficiency by reducing noise and retaining the  most
+Page 9 matches for 'classifier':
+  - providing strong generalization and low false-positive rates compared to individual classifiers.
+Page 9 matches for 'model':
+  -  Model Retraining Pipeline: Implement automatic retraining with new data
+  - 1. Machine learning models demonstrated high accuracy in distinguishing phishing websites from legitimate
+  - 4. Data preprocessing and balancing using methods like SMOTE significantly improved model stability and
+
+
+================================================================================
+FILE: 5. SHAP-based Interpretable Deep Learning Framework for Phishing Website Detection.pdf
+================================================================================
+Total Pages: 23
+
+--- FIRST TWO PAGES ---
+ 
+Science in Information Technology Letters 
+ 
+Vol. 6., No. 2, November 2025, pp. 66-88 
+ISSN 2722-4139 
+http://pubs2.ascee.org/index.php/sitech             
+ 
+        http://doi.org/10.31763/sitech.v6i2.2353 sitech@ascee.org   
+SHAP-based interpretable deep learning framework 
+for phishing website detection  
+Rizki Wahyudi a,1,*, Altayeb Alhadi Dawai b,2, Deris Stiawan c,3, Andri Pranolo d,4, Yingchi Mao e,5, 
+Amam Hossain Bagdade f,6 
+a Universitas Amikom Purwokerto, Purwokerto, Indonesia 
+b University of Algarve, Faro, Portugal 
+c Computer System, Universitas Sriwijaya, Palembang, Indonesia 
+d Informatics Department, Universitas Ahmad Dahlan, Yogyakarta, Indonesia  
+e College of Computer and Information, Hohai University, Nanjing, China 
+f  EEE Department, Presidency University, Dhaka, Bangladesh 
+1 rizki.key@gmail.com; 2 altayebalhadi53@gmail.com; 3 deris@unsri.ac.id; 4 andri.pranolo@tif.uad.ac.id;  
+5 yingchimao@hhu.edu.cn; 6 amambagdadee@gmail.com 
+* Corresponding Author 
+ 
+1. Introduction  
+Phishing attacks have emerged as one of the most widespread and harmful cyber hazards in today's 
+ever-changing digital age. Phishing is a type of fraud in which scammers impersonate reputable websites 
+to obtain sensitive user information such as login credentials, credit card information, and other personal 
+information. According to the Anti-Phishing Working Group (APWG), phishing operations have lately 
+ARTI C L E I NF O 
+ 
+ABSTRACT   
+ 
+ 
+Article history 
+Received September 20, 2025 
+Revised November 09, 2025 
+Accepted November 12, 2025 
+ Phishing attacks are increasingly complex and challenging to detect, posing 
+a substantial challenge for cybersecurity professionals. This paper proposes 
+a SHAP -based Interpretable Deep Learning Framework aimed at 
+identifying phishing websites, emphasizing transparency in the m odels' 
+decision-making processes. The five deep learning architectures evaluated 
+were the Artificial Neural Network (ANN), Multi -Layer Perceptron 
+(MLP), Autoencoder, Convolutional Neural Network (CNN), and 
+Bidirectional Long Short -Term Memory (Bi -LSTM). Th e evaluation 
+process employed several metrics, including accuracy, precision, recall, F1-
+score, area under the receiver operating characteristic curve (AUC -ROC), 
+and model interpretability through SHAP (Shapley Additive 
+Explanations). The experimental resu lts demonstrate that the Bi -LSTM 
+algorithm achieves superior performance, with an accuracy of 97.03%, a 
+recall of 98.44%, and an F1 -score of 97.36%. SHAP visualization 
+successfully identifies the most significant aspects in phishing classification, 
+thereby enhancing both transparency and trust in the model. This method 
+not only efficiently detects phishing but also provides clear explanations for 
+individuals lacking technical knowledge. This study contributes to the 
+development of a deep learning -based phis hing detection system that is 
+both accurate and computationally understandable. 
+© 2025 The Author(s). 
+This is an open access article under the CC–BY-SA license. 
+    
+ 
+ 
+Keywords 
+Phishing detection 
+Deep Learning 
+SHAP 
+Interpretability 
+Website Classification 
+ 
+ 
+ISSN 2722-4139 Science in Information Technology Letters 67 Vol. 6., No. 2, November 2025, pp. 66-88 
+  
+ Rizki Wahyudi. et al (SHAP-based interpretable deep learning framework for phishing website detection…) 
+reached historic levels, with more than one million attacks documented in a single quarter of 2022 [1]. 
+As the complexity and volume of phishing attacks increase, the need for accurate and reliable automated 
+detection systems becomes increasingly urgent.  
+Identifying phishing websites uses various techniques, such as list-based, visual similarity, heuristic, 
+machine learning [2], [3], data mining [4], and deep learning, [5]. Various machine learning -based 
+approaches have been developed to detect phishing sites, including Decision Tree, Random Forest, and 
+Support Vector Machine. However, many of these models de
+
+--- LAST TWO PAGES ---
+pplication of autoencoder in deep 
+learning,” Appl. Soft Comput., vol. 138, p. 110176, May 2023, doi: 10.1016/j.asoc.2023.110176. 
+[37] E. U. H. Qazi, A. Almorjan, and T. Zia, “A One-Dimensional Convolutional Neural Network (1D-CNN) 
+Based Deep Learning System for Network Intrusion Detection,” Appl. Sci., vol. 12, no. 16, p. 7986, Aug. 
+2022, doi: 10.3390/app12167986. 
+[38] S. M. Hasanat et al. , “Enhancing Load Forecasting Accuracy in Smart Grids: A Novel Parallel 
+Multichannel Network Approach Using 1D CNN and Bi‐LSTM Models,” Int. J. Energy Res., vol. 2024, 
+no. 1, p. 2403847, Jan. 2024, doi: 10.1155/2024/2403847. 
+[39] C. Ounoughi and S. Ben Yahia, “Sequence to sequence hybrid Bi -LSTM model for traffic speed 
+prediction,” Expert Syst. Appl., vol. 236, p. 121325, Feb. 2024, doi: 10.1016/j.eswa.2023.121325. 
+[40] B. Sabiri, B. El Asri, and M. Rhanoui, “Mechanism of Overfitting Avoidance Techniques for Training 
+Deep Neural Networks,” in Proceedings of the 24th International Conference on Enterprise Information 
+Systems, 2022, vol. 1, pp. 418–427, doi: 10.5220/0011114900003179. 
+[41] D. Sehrawat and Y. Singh, “Comparative Analysis on Fraud Detection in Credit Card Transaction Using 
+Different Machine Learning Algorithms,” in Lecture Notes in Networks and Systems, vol. 425, Springer, 
+Singapore, 2022, pp. 673–684, doi: 10.1007/978-981-19-0707-4_61. 
+[42] D. Miyamoto, H. Hazeyama, and Y. Kadobayashi, “An Evaluation of Machine Learning -Based Methods 
+for Detection of Phishing Sites,” in Lecture Notes in Computer Science (including subseries Lecture 
+Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) , vol. 5506 LNCS, no. PART 1, 
+Springer, Berlin, Heidelberg, 2009, pp. 539–546, doi: 10.1007/978-3-642-02490-0_66. 
+[43] M. Vijayalakshmi, S. Mercy Shalinie, M. H. Yang, and R. M. U., “Web phishing detection techniques: a 
+survey on the state‐of‐the‐art, taxonomy and future directions,” IET Networks, vol. 9, no. 5, pp. 235 –
+246, Sep. 2020, doi: 10.1049/iet-net.2020.0078. 88 Science in Information Technology Letters ISSN 2722-4139 Vol. 6., No. 2, November 2025, pp. 66-88 
+  
+ Rizki Wahyudi. et al (SHAP-based interpretable deep learning framework for phishing website detection…) 
+[44] L. Tang and Q. H. Mahmoud, “A Survey of Machine Learning -Based Solutions for Phishing Website 
+Detection,” Mach. Learn. Knowl. Extr., vol. 3, no. 3, pp. 672–694, Aug. 2021, doi: 10.3390/make3030034. 
+[45] S. M. Lundberg, P. G. Allen, and S. -I. Lee, “A Unified Approach to Interpreting Model Predictions,” 
+NeurIPS Proceedings, 2017. [Online]. Available at: https://dl.acm.org/doi/pdf/10.5555/3295222.3295230. 
+[46] S. M. Lundberg et al., “From local explanations to global understanding with explainable AI for trees ,” 
+Nat Mach Intell, vol. 2, no. 1, pp. 56–67, Jan. 2020, doi: 10.1038/s42256-019-0138-9  
+[47] S. Alsufyani and S. Alajmani, “A Deep Learning for Arabic SMS Phishing Based on URLs Detection,” 
+Int. J. Adv. Comput. Sci. Appl., vol. 16, no. 1, p. 388, Jan. 2025, doi: 10.14569/IJACSA.2025.0160138. 
+[48] M. Mia, D. Derakhshan, and M. M. A. Pritom, “Can Features for Phishing URL Detection Be Trusted 
+Across Diverse Datasets? A Case Study with Explainable AI,” in Proceedings of the 11th International 
+Conference on Networking, Systems, and Security , Dec. 2024,  pp. 137 –145, doi: 
+10.1145/3704522.3704532. 
+[49] L. Lakshmi, M. P. Reddy, C. Santhaiah, and U. J. Reddy, “Smart Phishing Detection in Web Pages using 
+Supervised Deep Learning Classification and Optimi zation Technique ADAM,” Wirel. Pers. Commun., 
+vol. 118, no. 4, pp. 3549–3564, Jun. 2021, doi: 10.1007/s11277-021-08196-7. 
+[50] M. R. Islam, M. M. Islam, M. S. Afrin, A. Antara, N. Tabassum, and A. Amin, “PhishGuard: A 
+Convolutional Neural Network-Based Model for Detecting Phishing URLs with Explainability Analysis,” 
+in 2024 3rd International Conference on Artificial Intelligence For Internet of Things (AIIoT), May 2024, 
+pp. 1–6, doi: 10.1109/AIIoT58432.2024.10574688 
+
+--- KEYWORD SEARCH ---
+Page 1 matches for 'accuracy':
+  - process employed several metrics, including accuracy, precision, recall, F1-
+  - algorithm achieves superior performance, with an accuracy of 97.03%, a
+Page 1 matches for 'model':
+  - and model interpretability through SHAP (Shapley Additive
+  - thereby enhancing both transparency and trust in the model. This method
+Page 2 matches for 'accuracy':
+  - learning has shown improved accuracy and reduced dependency on manual feature extraction, making it
+  - accuracy, instead emphasizing prediction performance and model transparency through SHAP -based
+Page 2 matches for 'feature':
+  - features, which may not generalise effectively to new attack patterns or emerging phishing techniques
+  - and automatically representing features from raw data [10], [11]. In phishing detection tasks, deep
+  - learning has shown improved accuracy and reduced dependency on manual feature extraction, making it
+Page 2 matches for 'model':
+  - Support Vector Machine. However, many of these models depend significantly on manually engineered
+  - suitable for identifying sophisticated or obfuscated phishing URLs [12]. Models such as Artificial Neural
+  - high performance, deep learning models are often criticised as black boxes due to their lack of
+Page 3 matches for 'dataset':
+  - approach, utilizing a processed dataset divided into training and testing data. Fig. 1 illustrates the stages
+  - 2.1. Dataset
+  - The dataset that was utilized was obtained from the platform within the UCI Machine Learning
+Page 3 matches for 'feature':
+  - and 1 stands for phishing), as well as numeric features that indicate the qualities of URLs and web
+  - content. The data were normalized after the index column was removed to make the scales of the features
+  - Normalization: Input features are normalized using z -score normalization , which is done by
+Page 3 matches for 'model':
+  - This research aims to evaluate and compare the performance of five deep learning models in detecting
+  - phishing websites. The five models are Artificial Neural Network (ANN), Multi -Layer Perceptron
+  - Data Reshape: The Bi-LSTM model transforms the data into a three-dimensional format (samples,
+Page 4 matches for 'feature':
+  - LSTM layers that filter out important features and construct a low -dimensional latent
+  - capture feature relationships from two directions. This model uses two Bi-LSTM layers followed
+Page 4 matches for 'model':
+  - interpretability approaches have been incorporated into the structure of the models. Fig. 2 illustrates
+  - • Artificial Neural Network (ANN) : The ANN model consists of several dense layers with the ReLU
+  - representation from the encoder is used as input to an additional classification model [36].
+Page 5 matches for 'accuracy':
+  - Performance measurements encompa ssing accuracy, precision, recall, F1 -score, Area Under the
+  - • Accuracy measures how often the classifier is actually correct in predicting positive and negative
+  - attributes, including local accuracy, handling of missing data, and consistency, which distinctly define
+Page 5 matches for 'feature':
+  - We utilize SHAP (SHapley Additive exPlanations) as an additive feature-attribution framework to
+  - measure the contribution of each feature to a model's prediction. SHAP consolidates various previous
+  - For an instance 𝑥 with feature set 𝐹 (∣𝐹∣= 𝑀), the Shapley value 𝜙𝑗(𝑥) for feature 𝑗
+Page 5 matches for 'classifier':
+  - • Accuracy measures how often the classifier is actually correct in predicting positive and negative
+Page 5 matches for 'model':
+  - 2.4. The model training process
+  - Using the Adam optimizer, each model was trained with either the binary_crossentropy or
+  - 2.5. Model Evaluation
+Page 6 matches for 'dataset':
+  - Dataset Source UCI Phishing Websites Dataset (11.055 records)
+Page 6 matches for 'accuracy':
+  - Additional Metrics Accuracy, Precision, Recall, F1, ROC-AUC
+Page 6 matches for 'feature':
+  - The global importance of a feature j is expressed as the mean absolute Shapley value across all samples:
+  - Feature Scaling Z-score normalization: X=(X−μ)/σ
+  - Reshape (for LSTM) (samples,1,features)
+Page 6 matches for 'results':
+  - distributional views, such as beeswarm plots, are provided in the Results section. SHAP explanations are
+Page 6 matches for 'model':
+  - the best-performing model determined during model selection, with AUPRC as the primary criterion
+  - computed and presented for the best-performing model selected in the model-selection step, AUPRC
+  - SHAP analyses were conducted exclusively on the best -performing model ( Bi-LSTM) using the
+Page 7 matches for 'dataset':
+  - reflecting the quantity of features subsequent to the preprocessing of the phishing dataset. The ANN
+  - The model input consists of a number of features resulting from the dataset preprocessing, with an input
+Page 7 matches for 'accuracy':
+  - Model evaluation was conducted utilizing accuracy, precision, recall, F1-score, and ROC-AUC metrics.
+Page 7 matches for 'feature':
+  - multiple layers organized hierarchically as show in Table 2. The input layer accommodates nnn features,
+  - reflecting the quantity of features subsequent to the preprocessing of the phishing dataset. The ANN
+  - The model input consists of a number of features resulting from the dataset preprocessing, with an input
+Page 7 matches for 'results':
+  - 3. Results and Discussion
+Page 7 matches for 'model':
+  - All model scripts, SHAP visualization routines, and configuration logs were executed in identical
+  - 3.1.1. Artificial Neural Network (ANN) Model Architecture
+  - This study employed a sequentially constructed Artificial Neural Network (ANN) model featuring
+Page 8 matches for 'accuracy':
+  - significantly improves. The model was evaluated using the following metrics: accuracy, precision, recall,
+Page 8 matches for 'feature':
+  - shape of n features. There are two hidden layers, each with 512 neurones, equipped with the ReLU
+  - latent features from input data prior to classification. The architecture consists of two main components
+  - dimensionality of the original features to a lower -dimensional compressed representation (latent
+Page 8 matches for 'classifier':
+  - the autoencoder and the classifier, which are trained separately as show in Table 4.
+  - • Classifier Architecture
+  - The latent features generated from the encoder are then used as input to a separate classifier tasked
+Page 8 matches for 'model':
+  - which is responsible for generating binary classification probabilities. The model was compiled using the
+  - significantly improves. The model was evaluated using the following metrics: accuracy, precision, recall,
+  - Table 3.  MLP Model Architecture
+Page 9 matches for 'accuracy':
+  - of 10 and restore_best_weights was enabled. Model evaluation was carried out using accuracy, precision,
+Page 9 matches for 'feature':
+  - and aimed to process tabular phishing feature data that had been reshaped into a 3-dimensional format
+  - the feature dimensionality. The second layer uses 128 filters with a kernel size of 3,  also followed by
+Page 9 matches for 'classifier':
+  - Table 4.  Autoencoder and Classifier Model Architecture
+  - 11 Classifier Dense 128 ReLU
+Page 9 matches for 'model':
+  - Table 4.  Autoencoder and Classifier Model Architecture
+  - 3.1.4. Convolutional Neural Network (CNN) Model Architecture
+  - The Convolutional Neural Network (CNN) model in this study was built using a sequential approach
+Page 10 matches for 'feature':
+  - and dependencies between features from phishing data that has been re-represented in the form of one-
+  - structure (samples, timesteps, features), where timesteps = 1. The Bi-LSTM architecture consists of two
+Page 10 matches for 'model':
+  - 3.1.5. Bidirectional Long Short-Term Memory (Bi-LSTM) Model Architecture
+  - A Bidirectional Long Short-Term Memory (Bi-LSTM) model is built to capture temporal patterns
+  - produce a binary probability (phishing  or non -phishing). The model was compiled using binary
+Page 11 matches for 'accuracy':
+  - Analysis of model accuracy during the training process shows a consistent pattern across each model
+  - in Fig. 4. In the ANN model, both training accuracy (binary_accuracy) and validation accuracy
+  - (val_binary_accuracy) show a steady increase with increasing epochs, reaching a maximum near 0.98.
+Page 11 matches for 'model':
+  - Bi-LSTM achieved rapid convergence in fewer epochs than the other models, with a loss pattern that
+  - process. Overall, the loss over epochs trend in all models supports the effectiveness of the developed
+  - Fig. 3. Loss Over Epochs Model (a) ANN, (b) MLP, (c) Autoencoder, (d) CNN, (e) Bi-LSTM
+Page 12 matches for 'accuracy':
+  - Although val_binary_accuracy exhibits slight fluctuations toward the end of training, both remain at a
+  - On the other hand, the MLP model performs similarly, with stable accuracy and a gradual increase
+  - accuracy, but the difference between training and validation accuracy indicates potential overfitting that
+Page 12 matches for 'feature':
+  - features. Overall, all models show a positive trend in accuracy impro vement, albeit with varying
+Page 12 matches for 'results':
+  - accuracy, these results indicate that the models perform well in representing the data through the learned
+Page 12 matches for 'model':
+  - high level, reflecting the model's good generalization.
+  - On the other hand, the MLP model performs similarly, with stable accuracy and a gradual increase
+  - should be considered. Finally, the autoencoder model demonstrates fairly high accuracy, with a faster
+Page 13 matches for 'dataset':
+  - using a structured phishing dataset, and its performance was tested based on five key metrics: accuracy,
+Page 13 matches for 'accuracy':
+  - using a structured phishing dataset, and its performance was tested based on five key metrics: accuracy,
+  - accuracy of 97.03%, a recall of 98.44%, and an F1-score of 97.36%, demonstrating its superior ability
+  - performance with an accuracy of 96.92% and an ROC -AUC of 0.9969, indicating near -perfect
+Page 13 matches for 'feature':
+  - patterns between features, even when the data is tabular. CNN also demonstrates competitive
+  - performance, thanks to its ability to extract spatial representations between features.
+Page 13 matches for 'results':
+  - The results show that the Bi-LSTM model has the best performance with an F1-score of 0.972 and
+Page 13 matches for 'model':
+  - 3.2.1. Model Performance Evaluation
+  - Short-Term Memory (Bi-LSTM) in detecting phishing sites as show in Fig. 5. Each model was trained
+  - Fig. 5. Comparison of the performance of different Model
+Page 14 matches for 'accuracy':
+  - detection applications that prioritize high accuracy and interpretability.
+Page 14 matches for 'results':
+  - phishing websites shows very optimal results compared to ANN, MLP, Autoencoder, and CNN. The
+  - Based on the confusion matrix results for the Bi-LSTM model in Fig. 7, the model successfully
+  - negative). These results indicate that the model has excellent ability to distinguish between
+Page 14 matches for 'model':
+  - Based on the ROC curve visualization in Fig. 6, the performance of the Bi-LSTM model in detecting
+  - and a low false positive rate. An Area Under the Curve (AUC) value of 1.00 confirms that the model
+  - is to 1, the better the model's performance in distinguishing between the two classes. This visualization
+Page 15 matches for 'feature':
+  - The SHAP (SHapley Additive exPlanations) method is used to analyze how features contribute to
+  - Based on the SHAP summary plot in Fig. 8, the "URL_of_Anchor" feature has the most dominant
+  - indicate the distribution of feature values, with red representing high features and blue representing
+Page 15 matches for 'model':
+  - 3.2.3. Model Interpretability with SHAP
+  - predictions, ensuring that the model is both accurate and interpretable.
+  - influence on the Bi -LSTM model's output in detecting phishing sites. The red and blue dots
+Page 16 matches for 'feature':
+  - input features.
+  - The SHAP heatmap shows the absolute average influence of each feature on the model's
+  - predictions, allowing for numerical identification of important features.
+Page 16 matches for 'results':
+  - Overall, these interpretability results confirm that the Bi-LSTM model is not only capable of
+Page 16 matches for 'model':
+  - The SHAP heatmap shows the absolute average influence of each feature on the model's
+  - Based on the SHAP heatmap in Fig. 9, the Bi -LSTM model shows that se veral features
+  - hyperlinks pointing to suspicious domains significantly impacts the model's decisions. Furthermore,
+Page 17 matches for 'accuracy':
+  - Collectively, these findings emphasize that although all models yield comparable predictive accuracy,
+Page 17 matches for 'feature':
+  - certificates. Its bidirectional temporal encoding captures feature interdependencies effectively, explaining
+  - The CNN model also identified structural features such as Request_URL and Abnormal_URL as
+  - critical, but its focus tended toward localized feature interactions, likely due to convolutional kernel
+Page 17 matches for 'model':
+  - The CNN model also identified structural features such as Request_URL and Abnormal_URL as
+  - In contrast, the Autoencoder model revealed dispersed SHAP attributions, indicating a broader but
+  - lacks fine-grained interpretability for phishing -specific cues. Similarly, the ANN and MLP models
+Page 18 matches for 'dataset':
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+  - Dataset,
+  - datasets.
+Page 18 matches for 'accuracy':
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+  - accuracy
+Page 18 matches for 'feature':
+  - feature
+  - feature relevance
+  - ve feature
+Page 18 matches for 'model':
+  - the deep learning method and SHAP interpretation technique, along with an analysis of each model's
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+  - limiting model
+Page 19 matches for 'dataset':
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+Page 19 matches for 'accuracy':
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+  - accuracy
+Page 19 matches for 'feature':
+  - how features contributed to predictions, which made the model's decisions clearer. This approach
+Page 19 matches for 'results':
+  - results, with
+Page 19 matches for 'model':
+  - Researcher Method Dataset Model Interpretabiliy Accuracy Advantages  Disadvantages
+  - model
+  - models with
+Page 20 matches for 'accuracy':
+  - accuracy is an essential requirement for real -world implementations, notably in the fields of data
+Page 20 matches for 'feature':
+  - [6] R. Verma and A. Das, “What’s in a URL : Fast Feature Extraction and Malicious URL Detection,” in
+Page 20 matches for 'model':
+  - [3] G. Sonowal and K. S. Kuppusamy, “PhiDMA – A phishing detection model with multi-filter approach,”
+  - [8] A. Aljofey, Q. Jiang, Q. Qu, M. Huang, and J. -P. Niyigena, “An Effective Phishing Detection Model
+Page 21 matches for 'classifier':
+  - deep classifier for intrusion detection with imbalanced data,” Int. J. Sens. Networks , vol. 45, no. 2, pp .
+Page 21 matches for 'model':
+  - [11] S. F. Ahmed et al., “Deep learning modelling techniques: current progress, applications, advantages, and
+  - [13] O. Al Harbi and A. Hamed, “A dual-stage deep learning model based on a sparse autoencoder and layered
+  - learning models,” PeerJ Comput. Sci., vol. 9, p. e1629, Nov. 2023, doi: 10.7717/peerj-cs.1629.
+Page 22 matches for 'dataset':
+  - https://archive.ics.uci.edu/dataset/327/phishing+websites.
+Page 22 matches for 'accuracy':
+  - Impact of Data Normalization on the Accuracy of Machine Learning Algorithms: A Comparative
+  - [38] S. M. Hasanat et al. , “Enhancing Load Forecasting Accuracy in Smart Grids: A Novel Parallel
+Page 22 matches for 'feature':
+  - [30] A. Demircioğlu, “ The effect of feature normalization methods in radiomics,” Insights Imaging, vol. 15,
+Page 22 matches for 'model':
+  - [31] A. Gicic, D. Đonko, and A. Subasi, “Time Sequence  Deep Learning Model for Ubiquitous Tabular Data
+  - Multichannel Network Approach Using 1D CNN and Bi‐LSTM Models,” Int. J. Energy Res., vol. 2024,
+  - [39] C. Ounoughi and S. Ben Yahia, “Sequence to sequence hybrid Bi -LSTM model for traffic speed
+Page 23 matches for 'dataset':
+  - Across Diverse Datasets? A Case Study with Explainable AI,” in Proceedings of the 11th International
+Page 23 matches for 'feature':
+  - [48] M. Mia, D. Derakhshan, and M. M. A. Pritom, “Can Features for Phishing URL Detection Be Trusted
+Page 23 matches for 'model':
+  - [45] S. M. Lundberg, P. G. Allen, and S. -I. Lee, “A Unified Approach to Interpreting Model Predictions,”
+  - Convolutional Neural Network-Based Model for Detecting Phishing URLs with Explainability Analysis,”
+
+

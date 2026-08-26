@@ -1,0 +1,38 @@
+# Core Data Science
+pandas==2.3.0
+numpy==2.3.1
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Machine Learning
+scikit-learn==1.7.0
+xgboost==3.0.2
+shap==0.48.0
+
+# Web App
+streamlit==1.46.1
+plotly==6.1.2
+
+# Database
+sqlalchemy==2.0.41
+
+# Document Generation
+python-docx==1.2.0
+openpyxl==3.1.5
+
+# URL Feature Engineering
+tldextract==5.3.0
+
+# Utilities
+joblib==1.5.1
+
+# Jupyter Notebook Environment
+jupyter==1.1.1
+notebook==7.4.3
+
+# Web Scraping & HTTP
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# Document & PDF Generation
+fpdf2==2.8.7

@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "What is phishing?",
+        "answer": "Phishing is a cyberattack where attackers send deceptive messages (emails, texts, or direct messages) designed to look like they come from a trusted organization (like banks, government agencies, or retail brands). The goal is to trick you into revealing sensitive information, such as passwords, credit card numbers, or personal identity details, or to install malware on your device.",
+        "tags": ["phishing", "basics", "definition"]
+    },
+    {
+        "id": 2,
+        "question": "How can I identify a fake or phishing website?",
+        "answer": "To identify fake websites, check the following:\n1. **Inspect the Domain Name:** Phishing sites often use domain names that mimic real ones (e.g., 'secure-paypal-login.xyz' instead of 'paypal.com'). Watch out for typosquatting (subtle spelling errors).\n2. **Look for HTTPS:** Check for a secure connection lock icon. While many phishing sites use HTTPS now, the absence of it on a login page is a major red flag.\n3. **Assess the Content and Request:** Be suspicious of poor grammar, low-resolution logos, and forms requesting urgent credential entries.\n4. **Check the TLD:** Suspicious top-level domains (like .xyz, .cc, .top) are frequently used for disposable phishing sites compared to (.com, .org, .net).",
+        "tags": ["fake website", "phishing url", "tld", "identification"]
+    },
+    {
+        "id": 3,
+        "question": "What is typosquatting / link manipulation?",
+        "answer": "Typosquatting (or URL hijacking) is a form of social engineering where attackers register domain names that are common misspellings of popular websites (e.g., 'goolge.com' instead of 'google.com'). When users accidentally mistype a URL, they land on a copycat website designed to steal credentials or infect devices with malware.",
+        "tags": ["typosquatting", "link manipulation", "domains"]
+    },
+    {
+        "id": 4,
+        "question": "What is the difference between HTTPS and HTTP?",
+        "answer": "HTTP (Hypertext Transfer Protocol) transmits data in plain text, meaning anyone intercepting your connection can read it. HTTPS (where the 'S' stands for 'Secure') encrypts the data between your browser and the website using SSL/TLS, preventing eavesdropping and tampering. Never type passwords or banking info on a plain HTTP page.",
+        "tags": ["http", "https", "encryption", "security"]
+    },
+    {
+        "id": 5,
+        "question": "What is DNS spoofing / cache poisoning?",
+        "answer": "DNS spoofing is an attack where an attacker alters domain name system (DNS) records to redirect traffic from a legitimate website to a fraudulent one controlled by the attacker. Since your browser displays the correct URL, this type of spoofing is highly deceptive and is best prevented by using secure, verified DNS resolvers and HTTPS.",
+        "tags": ["dns spoofing", "cache poisoning", "dns"]
+    },
+    {
+        "id": 6,
+        "question": "How do I identify a spam or phishing email?",
+        "answer": "Phishing emails often have distinct markers:\n1. **Urgency & Threats:** Claims that your account will be suspended, or that you must act immediately to avoid penalties.\n2. **Generic Greetings:** Using 'Dear Customer' instead of your actual name.\n3. **Suspicious Sender Address:** The display name says 'Your Bank' but the email domain is '@mail-security-updates-ref.com'.\n4. **Unsolicited Attachments/Links:** Files named 'invoice.zip' or links redirecting to unrecognized websites.",
+        "tags": ["email spam", "phishing email", "indicators"]
+    },
+    {
+        "id": 7,
+        "question": "Why is multi-factor authentication (MFA) important?",
+        "answer": "MFA adds an extra layer of defense beyond your password. It requires two or more verification factors to gain access, such as a password plus a temporary code sent to an authenticator app. Even if an attacker steals your password through a phishing site, they cannot access your account without the second factor.",
+        "tags": ["mfa", "authentication", "account security"]
+    },
+    {
+        "id": 8,
+        "question": "What should I do if I clicked a phishing link?",
+        "answer": "If you clicked a suspicious link, act quickly:\n1. **Do not enter credentials:** If you already entered them, change your passwords on the real website immediately.\n2. **Disconnect from the network:** If you downloaded a file, turn off Wi-Fi or unplug the ethernet cable to stop potential malware from communicating.\n3. **Run an antivirus scan:** Scan your device for malware.\n4. **Enable MFA:** Turn on multi-factor authentication on all accounts.",
+        "tags": ["recovery", "clicked link", "mitigation"]
+    },
+    {
+        "id": 9,
+        "question": "What is a Top-Level Domain (TLD) and how is it related to phishing?",
+        "answer": "A TLD is the last segment of a domain name (e.g., '.com', '.org', '.gov'). Attackers often register phishing domains under cheap or unrestricted generic TLDs (like '.xyz', '.cc', '.bid', '.work') because they cost pennies to register and throw away when blacklisted. Genuine websites typically use established TLDs like '.com', '.net', or country-specific ones like '.us' or '.in'.",
+        "tags": ["tld", "phishing url", "domain structure"]
+    },
+    {
+        "id": 10,
+        "question": "How do password managers help protect against phishing?",
+        "answer": "Password managers are highly effective against phishing. They store credentials linked to specific domain names. If you visit a fake look-alike site (like 'facebo0k.com' instead of 'facebook.com'), the password manager will refuse to autofill your credentials because the domain does not match. This protects you even if you are fooled by the page's design.",
+        "tags": ["password managers", "prevention", "credentials"]
+    },
+    {
+        "id": 11,
+        "question": "What are common email spam techniques?",
+        "answer": "Email spammers use various techniques to bypass filters:\n1. **Word Obfuscation:** Spacing out letters or substituting symbols (e.g., 'F R E E' or 'V1agra').\n2. **Image-Based Spam:** Embedding text inside images so that text filters cannot scan it.\n3. **Spoofed Headers:** Changing the headers to make the mail appear to come from trusted domains.\n4. **Text stuffing:** Appending random words or hidden text to throw off statistical classifiers like Naive Bayes.",
+        "tags": ["email spam", "spammer techniques"]
+    },
+    {
+        "id": 12,
+        "question": "What is a Man-in-the-Middle (MitM) attack?",
+        "answer": "A Man-in-the-Middle attack occurs when a cyberattacker intercepts and relays communication between two parties (e.g., your device and a website) without either party knowing. The attacker can eavesdrop on your data or even inject fake content. Using HTTPS and avoiding public, unencrypted Wi-Fi networks are standard defenses against MitM.",
+        "tags": ["mitm", "eavesdropping", "network security"]
+    },
+    {
+        "id": 13,
+        "question": "What is Social Engineering?",
+        "answer": "Social Engineering is the psychological manipulation of people into performing actions or divulging confidential information. Unlike technical hacks, social engineering exploits human vulnerabilities like trust, fear, curiosity, or urgency. Phishing, baiting, and impersonation are all forms of social engineering.",
+        "tags": ["social engineering", "manipulation", "basics"]
+    },
+    {
+        "id": 14,
+        "question": "What is the difference between ham and spam?",
+        "answer": "In email classification terminology, **Spam** refers to unsolicited bulk emails, advertisements, scams, or malicious payloads. **Ham** refers to legitimate, wanted emails (personal communications, billing statements, work updates) that are safe to read.",
+        "tags": ["ham", "spam", "definition"]
+    },
+    {
+        "id": 15,
+        "question": "How does CyberShield AI classify threats?",
+        "answer": "CyberShield AI uses two machine learning models optimized for specific threat indicators:\n1. **URL Scanner:** Uses a gradient-boosted decision tree (**XGBoost**) trained on features like length, character ratios, IP presence, and webpage HTML structure.\n2. **Email Scanner:** Uses a **Linear SVM** text classifier trained on clean TF-IDF vectors to identify spam keywords and structural markers. It also integrates **SHAP** as an Explainable AI diagnostic to display why a URL is flagged.",
+        "tags": ["cybershield", "about", "xgboost", "svm"]
+    },
+    {
+        "id": 16,
+        "question": "What is spear phishing and how is it different from regular phishing?",
+        "answer": "Regular phishing casts a wide net — attackers send identical deceptive emails to thousands of people hoping a few will fall for it. Spear phishing is highly targeted: attackers research a specific individual or organization and craft a personalized message using their name, role, or recent activity. For example, an attacker might impersonate your manager and ask you to transfer funds urgently. Spear phishing has a much higher success rate because the messages feel genuine.",
+        "tags": ["spear phishing", "targeted attack", "social engineering"]
+    },
+    {
+        "id": 17,
+        "question": "What is a homograph attack / IDN spoofing?",
+        "answer": "A homograph (or IDN homograph) attack exploits the fact that many Unicode characters look visually identical to ASCII letters. An attacker can register a domain like 'аpple.com' where the 'а' is a Cyrillic character, not Latin 'a'. The URL looks identical in the browser's address bar, but leads to a completely different server. Modern browsers show the Punycode representation (xn--pple-43d.com) to warn users, but many people do not notice it.",
+        "tags": ["homograph attack", "idn spoofing", "unicode", "url"]
+    },
+    {
+        "id": 18,
+        "question": "What is ransomware and how is it delivered?",
+        "answer": "Ransomware is malicious software that encrypts the victim's files, making them inaccessible, and demands a ransom payment (usually in cryptocurrency) to restore access. It is primarily delivered via:\n1. **Phishing emails** with malicious attachments (Word documents with macros, or ZIP files).\n2. **Drive-by downloads** from compromised websites.\n3. **Exposed Remote Desktop Protocol (RDP) ports** that are brute-forced.\nPrevention: regular offline backups, patching software, and MFA on all remote access tools.",
+        "tags": ["ransomware", "malware", "delivery", "prevention"]
+    },
+    {
+        "id": 19,
+        "question": "What is TF-IDF and how is it used in email spam detection?",
+        "answer": "TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic that reflects how important a word is to a document within a collection. In spam detection:\n- **TF (Term Frequency):** How often a word appears in the email.\n- **IDF (Inverse Document Frequency):** How rare the word is across all emails in the training set.\nWords like 'winner', 'claim', 'restricted' appear frequently in spam but rarely in legitimate emails, giving them a high TF-IDF weight. A linear classifier like SVM learns to weigh these features to make predictions.",
+        "tags": ["tfidf", "email", "nlp", "spam detection", "machine learning"]
+    },
+    {
+        "id": 20,
+        "question": "What is XGBoost and why is it used for URL classification?",
+        "answer": "XGBoost (Extreme Gradient Boosting) is an ensemble machine learning algorithm that builds multiple decision trees sequentially. Each new tree corrects the errors of the previous ones. It is ideal for URL classification because:\n1. It handles mixed feature types (binary flags like IsHTTPS + continuous values like URL length) natively.\n2. It is extremely fast at inference (microseconds per prediction), critical for real-time threat scanning.\n3. It is robust to outliers and does not require feature scaling.\n4. It integrates naturally with SHAP for explainability.",
+        "tags": ["xgboost", "machine learning", "url classification", "gradient boosting"]
+    },
+    {
+        "id": 21,
+        "question": "What is SHAP and how does it explain model predictions?",
+        "answer": "SHAP (SHapley Additive exPlanations) is based on cooperative game theory. For each prediction, SHAP calculates a Shapley value for every input feature that represents its exact contribution to the final prediction score. A positive SHAP value means the feature pushed the score toward 'Phishing'; a negative value means it pushed toward 'Safe'. In CyberShield AI, SHAP values are displayed as a horizontal bar chart, showing precisely which URL features made the model flag a link as suspicious.",
+        "tags": ["shap", "explainability", "xai", "feature importance", "machine learning"]
+    },
+    {
+        "id": 22,
+        "question": "What is a zero-day vulnerability?",
+        "answer": "A zero-day vulnerability is a software security flaw that is unknown to the software vendor and therefore has no official patch or fix available. Attackers who discover zero-days can exploit them freely until the vendor becomes aware and releases a fix. Zero-day exploits are extremely valuable and are often used in targeted attacks against governments, financial institutions, and critical infrastructure.",
+        "tags": ["zero day", "vulnerability", "exploit", "patch"]
+    },
+    {
+        "id": 23,
+        "question": "What is a Security Operations Center (SOC)?",
+        "answer": "A SOC (Security Operations Center) is a centralized team of cybersecurity professionals who continuously monitor an organization's IT environment for security events and incidents. SOC analysts use SIEM tools (Security Information and Event Management) to correlate logs, detect anomalies, investigate alerts, and respond to threats in real time. If you receive a phishing email at work, you should forward it to your SOC team for analysis and blacklisting.",
+        "tags": ["soc", "security operations", "incident response", "siem"]
+    },
+    {
+        "id": 24,
+        "question": "What is credential stuffing?",
+        "answer": "Credential stuffing is a cyberattack where attackers use large collections of leaked username/password pairs (obtained from previous data breaches) and automatically test them against other websites. Since many people reuse passwords, attackers can gain unauthorized access to accounts on unrelated services. Defenses include using unique passwords for every site (with a password manager) and enabling MFA.",
+        "tags": ["credential stuffing", "data breach", "password reuse", "account takeover"]
+    },
+    {
+        "id": 25,
+        "question": "What is vishing (voice phishing)?",
+        "answer": "Vishing (voice phishing) is a phishing attack conducted over telephone calls. Attackers impersonate authority figures such as bank security teams, tax authorities, or tech support agents and manipulate victims into revealing sensitive information or performing financial transfers. Modern vishing attacks often use AI-cloned voices of real people to make the call sound authentic.",
+        "tags": ["vishing", "voice phishing", "phone scam", "social engineering"]
+    },
+    {
+        "id": 26,
+        "question": "What is smishing (SMS phishing)?",
+        "answer": "Smishing is phishing conducted via SMS text messages. Attackers send urgent texts impersonating delivery services (e.g., 'Your parcel is held — verify your address at this link') or financial institutions. The embedded link leads to a fake page designed to steal credentials or install malware. A key indicator is that legitimate organizations never ask for sensitive information via SMS links.",
+        "tags": ["smishing", "sms phishing", "text message", "mobile security"]
+    },
+    {
+        "id": 27,
+        "question": "What is the principle of least privilege?",
+        "answer": "The Principle of Least Privilege (PoLP) is a security best practice stating that any user, program, or system process should have only the minimum access rights necessary to perform its function — and nothing more. This limits the blast radius of a compromise. For example, a marketing employee should not have access to the company's financial database. Applying PoLP significantly reduces the damage an attacker can cause after breaching an account.",
+        "tags": ["least privilege", "access control", "security principle", "iam"]
+    },
+    {
+        "id": 28,
+        "question": "What is email header analysis and why is it useful?",
+        "answer": "Every email contains hidden metadata in its headers, including the true sender IP address, the mail relay chain, DKIM/SPF authentication results, and timestamps. Analyzing these headers reveals whether an email actually originated from the domain it claims to be from. For example, an email claiming to be from 'support@amazon.com' might show an originating IP from a server in an unexpected country, confirming it is spoofed. Most email clients allow you to view raw headers.",
+        "tags": ["email header", "analysis", "spoofing detection", "dkim", "spf"]
+    },
+    {
+        "id": 29,
+        "question": "What is an SSL certificate and what does it verify?",
+        "answer": "An SSL/TLS certificate is a digital document issued by a trusted Certificate Authority (CA) that cryptographically verifies a website's identity and enables encrypted HTTPS communication. When you see the padlock icon in your browser, it means:\n1. Your connection to the server is encrypted.\n2. The certificate was issued to the domain you are visiting by a trusted authority.\nHowever, many phishing sites now obtain free SSL certificates, so HTTPS alone does not guarantee a site is legitimate — always verify the full domain name.",
+        "tags": ["ssl", "tls", "certificate", "https", "encryption"]
+    },
+    {
+        "id": 30,
+        "question": "What best practices should I follow to stay safe online?",
+        "answer": "Core cybersecurity hygiene practices:\n1. **Use a password manager** and create unique, strong passwords for every account.\n2. **Enable MFA** on all accounts, especially email, banking, and cloud services.\n3. **Keep software updated** — patches fix known vulnerabilities that attackers actively exploit.\n4. **Verify URLs** before clicking — hover over links to see the real destination.\n5. **Never open unexpected attachments** even if the sender appears familiar.\n6. **Use a reputable DNS resolver** (like Cloudflare 1.1.1.1 or Google 8.8.8.8) to block known malicious domains.\n7. **Back up your data regularly** offline or to an encrypted cloud service.",
+        "tags": ["best practices", "security hygiene", "prevention", "online safety"]
+    }
+]

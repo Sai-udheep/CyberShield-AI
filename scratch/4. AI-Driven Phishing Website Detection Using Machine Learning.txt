@@ -1,0 +1,271 @@
+
+--- PAGE 1 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+898 
+AI-Driven Phishing Website Detection Using 
+Machine Learning 
+Author: Kajal Nitin Bauskar 
+Affiliation: Godavari Institute of Management & Research, Jalgaon. 
+Guide: Prof. Leena Patil 
+ 
+ABSTRACT  
+Phishing attacks remain one of the most persistent and rapidly evolving threats in cybersecurity. As 
+attackers continuously develop new techniques to deceive users, traditional detection methods such as 
+blacklists and rule -based filters are no longer suffi cient. This research paper proposes an AI -driven 
+phishing website detection system powered by advanced machine learning algorithms. The study utilizes 
+lexical, host -based, and securityrelated URL features to classify websites as phishing or legitimate. 
+Experimental analysis demonstrates that models such as LightGBM, XGBoost, and Random Forest 
+significantly improve identification accuracy. The findings indicate that AI -based URL analysis can 
+strengthen modern cybersecurity infrastructures.  
+KEYWORDS : Phishing Detection, Machine Learning, Cybersecurity, URL Analys is, LightGBM, AI -
+Based Security. 
+1. INTRODUCTION  
+With the exponential growth of internet usage, online activities such as banking, ecommerce, and social 
+networking have become extremely common. However, this digital expansion has also led to an alarming 
+rise in cybercrimes—particularly phishing attacks. Phishing websites mimic legitimate platforms to steal 
+confidential information such as passwords, credit card details, and personal identities. The glo bal 
+cybersecurity landscape has reported millions of phishing incidents annually, many of which bypass 
+conventional security systems. Attackers often modify URL structures, embed hidden redirections, and 
+use domain spoofing to avoid detection. Traditional systems like blacklists cannot keep up with these 
+dynamic threats. Machine learning (ML) provides a powerful alternative by analyzing URL behavior 
+patterns and automatically classifying harmful links. AI enables faster detection, higher accuracy, and 
+
+--- PAGE 2 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+899 
+resilience against newly emerging phishing techniques. This research paper presents an enhanced ML -
+based phishing detection model that integrates multiple feature engineering layers and state -of-the-art 
+algorithms to improve accuracy and speed.  
+2.OBJECTIVE 
+a) To develop a machine learning model for accurate phishing website detection using Random Forest 
+b) To extract and analyze relevant features from URLs for classification 
+c) To implement a user-friendly web interface for real-time phishing detection 
+d) To evaluate model performance using standard metrics including accuracy, precision, recall, and F1-score 
+e) To ensure model interpretability through feature importance analysis 
+ 
+3.LITERATURE REVIEW  
+Several studies highlight the importance of lexical and domain-based features for phishing URL detection. 
+Early approaches depended on signature -based filtering, which quickly became ineffective as attackers 
+generated new URLs at scale. Later studies introduced machine learning models that used URL length, IP 
+presence, domain age, and token patterns to distinguish malicious websites. Recent research shows that 
+gradient boosting algorithms—especially XGBoost and LightGBM— deliver high performance due to their 
+tree-based structure and ability to handle complex feature interactions. Deep learning models such as CNN 
+and RNN have also been explored, but their computational cost makes them less suitable for real -time 
+deployment. A gap identified in previous research is the need for hybrid feature integration. Many models 
+focus solely on lexical or host-based attributes. This study bridges that gap by combining multiple feature 
+types to improve robustness against obfuscated URLs and short-lived phishing domains.  
+ 
+4.METHODOLOGY  
+The proposed AI -driven phishing website detection system follows a structured machine learning 
+methodology. First, a labeled dataset consisting of phishing and legitimate URLs is collected from publicly 
+available sources such as PhishTank, OpenPhish, and trusted domain lists. The dataset is then preprocessed 
+through cleaning, removal of duplicates, handling of missing values, and normalization of numerical 
+attributes. To address class imbalance, oversampling techniques such as SMOTE are applied.  
+Next, feature engineering is performed to extract theoretical indicators of phishing behavior. These include 
+URL-based features (length, structure, presence of suspicious symbols), domain -based features (domain 
+--- PAGE 3 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+900 
+age, DNS records, SSL certificate validity), and conten tbased features (scripts, redirections, embedded 
+links). Feature selection methods are used to retain the most discriminative attributes.  
+ Machine learning models such as Decision Tree, Random Forest, Support Vector Machine, Logistic 
+Regression, and Gradient Boosting are then trained on the processed dataset using an appropriate train –test 
+split. Cross -validation is employed to minimize over fitting and ensure generalization. After training, the 
+models are theoretically evaluated using standard classification metrics including accuracy, precision, recall, 
+F1-score, and ROC-AUC.  
+Finally, the best-performing model is selected based on its ability to accurately distinguish phishing websites 
+from legitimate ones, forming the foundation of the AI-driven detection framework.  
+  
+  
+4.1 Dataset  
+A dataset of 11,500 URLs was used for training and evaluation. It contains an equal distribution of 
+phishing and legitimate URLs. All entries were preprocessed to remove duplicates, normalize text, and 
+label data for supervised learning.  
+   
+4.2 Feature Engineering Three major feature categories were used:  
+ A. Lexical Features  
+• URL length and domain length  
+• Number of subdomains  
+• Special character count and symbol patterns  
+• Presence of suspicious keywords (e.g., login, verify, update)  
+• URL entropy to detect randomness  
+ 
+B. Security Features  
+• HTTPS/SSL certificate details  
+• Redirection count  
+• URL shortening detection  
+  
+C. Host-Based Features  
+• Domain age and expiration  
+• DNS record validation  
+--- PAGE 4 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+901 
+• Use of IP-based domains  
+ 
+4.3 Applied Machine Learning Models  
+The following ML classifiers were trained:   
+• LightGBM  
+• XGBoost  
+• Random Forest  
+• Gradient Boosting  
+• Support Vector Machine (SVM)  
+  
+3.4 System Architecture Workflow  
+1. User inputs URL  
+2. Feature extraction module processes URL  
+3. ML model predicts label  
+4. Output displayed as “Phishing” or “Legitimate”  
+  
+Fig 1. A-Driven Phshing Website Detection Using Machine Learning  
+
+--- PAGE 5 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+902 
+ 
+5. RESULTS AND DISCUSSION  
+The models were evaluated using accuracy, precision, recall, and F1-score. LightGBM achieved the highest 
+accuracy of 99.81%, outperforming XGBoost (99.74%) and Random Forest (98.62%). LightGBM’s leaf-
+wise tree growth and efficient handling of large feature sets allows it to process URLs quickly and correctly 
+identify hidden malicious patterns. The model demonstrated strong resilience against:  
+• Obfuscated URLs  
+• Recently created malicious domains  
+• Websites with multiple redirections  
+This indicates its high suitability for real-time phishing detection applications.      
+1.Evaluation Metrics  
+The model was evaluated using standard classification metrics:  
+• Accuracy: Proportion of correctly classified instances  
+• Precision: Ability to correctly identify phishing sites  
+• Recall: Ability to detect all actual phishing sites  
+• Confusion Matrix: Visual representation of classification performance  
+   Confusion Matrix shows: 
+ TP: phishing correctly detected 
+ TN: legitimate correctly detected 
+ FP: legitimate wrongly flagged as phishing 
+ FN: phishing wrongly marked as legitimate 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PAGE 6 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+903 
+2.Experimental Results  
+Metric  
+Value  
+  
+Remarks  
+  
+Accuracy (%)  92-95%  Overall classification 
+performance  
+  
+Correct identification 
+of phishing sites  
+91-94%  Correct identification of 
+phishing sites  
+  
+Recall (%)  93-96%  Detection of actual 
+phishing sites  
+F1-Score (%)  92-95%  Balance between 
+precision and recall  
+                                                        
+3.Graphical Results  
+The project generated several visualizations including:  
+• Feature importance charts showing the most discriminative features  
+• Confusion matrices illustrating classification performance  
+• ROC curves demonstrating the trade-off between true positive and false positive rates  
+• Probability distributions for legitimate vs phishing classifications  
+  
+--- PAGE 7 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+904 
+  
+                                            7.2 Graphical Result  
+ 
+  
+
+--- PAGE 8 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+905 
+ 
+  
+  
+ 
+  
+ 6.FUTURE SCOPE 
+While the current system achieves high accuracy, several enhancements could improve its capabilities: 
+ Real-time Content Analysis: Incorporate page content analysis alongside URL features 
+ Browser Extension: Develop a browser plugin for seamless protection 
+ Enhanced Feature Set: Incorporate additional features like website popularity metrics 
+
+--- PAGE 9 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+906 
+ Multi-language Support: Expand detection capabilities to non-English phishing sites 
+ API Integration: Provide detection services to other applications via API 
+ Model Retraining Pipeline: Implement automatic retraining with new data 
+ 
+ 
+7. FINDINGS 
+1. Machine learning models demonstrated high accuracy in distinguishing phishing websites from legitimate 
+ones using extracted URL, domain, and content-based features.  
+2. URL structural features—such as abnormal length, use of special characters, and        deceptive patterns—
+were found to be the most influential indicators of phishing activity.  
+3. Ensemble learning techniques (Random Forest, XGBoost) achieved the best overall performance, 
+providing strong generalization and low false-positive rates compared to individual classifiers.  
+4. Data preprocessing and balancing using methods like SMOTE significantly improved model stability and 
+reduced bias toward legitimate websites.  
+5. Feature selection techniques enhanced model efficiency by reducing noise and retaining the  most 
+discriminative attributes.  
+ 
+8. CONCLUSION  
+This research project successfully developed an AI-driven phishing detection system using Random Forest 
+algorithm. The implementation demonstrated that Random Forest provides excellent performance in 
+classifying URLs as legitimate or phishing, with accuracy rates exceeding 90%. The system's web -based 
+interface provides accessible real-time protection against phishing threats. 
+The project highlights the effectiveness of machine learning in cybersecurity  applications and provides a 
+foundation for further development of intelligent phishing detection systems. By leveraging URL 
+characteristics rather than relying solely on blacklists, the approach offers proactive protection against 
+emerging phishing threats. 
+The Random Forest algorithm was particularly suitable for this application due to its robustness, good 
+performance with default parameters, and excellent feature interpretability. The implementation 
+demonstrates that feature -based machine learning appro aches can significantly enhance cybersecurity 
+measures while maintaining usability and accessibility for end-users. 
+This research contributes to the growing body of work applying artificial intelligence to cybersecurity 
+challenges and provides a practical implementation that balances accuracy, interpretability, and 
+computational efficiency.  
+ 
+ 
+--- PAGE 10 ---
+© 2025 JAAFR | Volume 3, Issue 11 November 2025 | ISSN: 2984-889X | JAAFR.ORG 
+JAAFR2511445 Journal of Advance and Future Research (www.jaafr.org)  
+ 
+907 
+  
+9.REFERENCES  
+1. Blum et al., “Phishing URL Detection Techniques,” 2020  
+2. Ma et al., “Machine Learning for Malicious URL Identification,” 2019  
+3. Sahoo et al., “Survey of Online Phishing Detection,” 2021  
+4. Karim et al., “Hybrid ML URL Classification,” 2023  
+  
